@@ -1,6 +1,6 @@
 module.exports = {
     init(app){
-      const staticRoutes = require("../routes/landing");
-      app.use(staticRoutes);
+      const landingRoutes = require("../routes/landing");
+      app.use(landingRoutes);
     }
   }

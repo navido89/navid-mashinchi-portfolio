@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" style = "scroll-behavior: smooth">
+
+  <head>
+    <% include ./partials/head.ejs %>
+  </head>
+
+  <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          background-color: white;
+          padding: 20px;
+          
+        }
+        
+        
+        .main {
+          max-width: 1000px;
+          margin: auto;
+        }
+        
+       
+        
+        .row {
+          margin: 8px -16px;
+          
+        }
+        
+        
+        .row,
+        .row > .column {
+          padding: 8px;
+        }
+        
+        
+        .column {
+          float: left;
+          width: 25%;
+        }
+        
+        
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        
+        .content {
+          background-color: #f9f9f9;
+          padding: 10px;
+          
+          
+        }
+        
+        
+        @media screen and (max-width: 900px) {
+          .column {
+            width: 50%;
+          }
+        }
+        
+       
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+          }
+        }
+
+        .container {
+  position: relative;
+  width: 100%;
+}
+
+ .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  }
+
+ .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+ .container:hover .image {
+  opacity: 0.3;
+ 
+  
+}
+
+ .container:hover .middle {
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  background:
+  linear-gradient(
+    hsl(189, 32%, 45%), 
+      black
+    )
+
+}
+
+ .text {
+  background-color: transparent;
+  color: white;
+  font-size: 50px;
+  height: 4.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+  </style>
+  
+  <body>
+
+    <% include ./partials/navbar.ejs %>
+
+      <main>
+
+          <section style= "background: transparent; text-align:center" class=" container jumbotron my-4">
+            
+              <img src="images/Head-Shot-For-Portfolio.jpg" class = "rounded-circle rounded mx-auto d-block animated zoomIn" alt="Navid Mashinchi Head-Shot" style="height:230px">
+              <h1 class="display-3 animated zoomIn">WORK</h1>
+              <hr>
+              <a href= "https://linkedin.com/in/navidmashinchi"><ion-icon name="logo-linkedin" style= "font-size: 80px; color:hsl(189, 32%, 45%)"></ion-icon></a>
+              <a href= "https://github.com/navido89"><ion-icon name="logo-github" style= "font-size: 80px; color: hsl(189, 32%, 45%)"></ion-icon></a>
+              <a href= "https://twitter.com/NMashinchi"><ion-icon name="logo-twitter" style= "font-size: 80px; color:hsl(189, 32%, 45%)"></ion-icon></a>
+              <a href= "https://www.instagram.com/navido_ma/"><ion-icon name="logo-instagram" style= "font-size: 80px; color: hsl(189, 32%, 45%)"></ion-icon></a>
+              <a href= "navid.mashinchi-resume.pdf" target="_blank"><ion-icon name="document"style= "font-size: 80px; color: hsl(189, 32%, 45%)"></ion-icon></a>
+              <hr>
+          </section>
+  
+          <section style="text-align: center; height:10px" class= jumbotron my-1>
+            <h4 class="display-6 lead animated slideInRight">"Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do." - Pele</h4> 
+          </section>
+  
+          <div>
+              <img src="images/numberFour.jpg"  class='w-100' style="height:600px" alt="number one image">
+          </div>
+        <br>
+
+        <div class ="lead">
+
+            <div class="row">
+                  <div class="column">
+                    <div class="content">
+                      <div class = "container"> 
+                        <img src="images/Blocipedia.jpg" alt="Blocipedia Picture" style="width:100%" class="image">
+                          <div class = "middle">
+                            <div class ="text">Blocipedia</div>
+                          </div>     
+                      </div>
+                      <ul>
+                      <li>
+                            <h5 style="text-decoration: underline">Description:</h5>
+                            <p>Blocipedia is an application that allows users to create, collaborate, and share wikis. Standard Users have the ability to contribute to 
+                                    and create public wikis while Premium users can create private wikis and add contributors.</p>
+                      </li>
+                      <li>
+                            <h5 style="text-decoration: underline">Technologies:</h5>
+                            <p>Node.js, JavaScript (ES6), Express, Passport, Bcrypt.js, PostgreSQL, Stripe, Sequelize, Sendgrid, EJS, HTML5, CSS and Jasmine.</p>
+                      </li>
+                      <li>
+                            <h5 style="text-decoration: underline">Links:</h5>
+                            <a href="https://navido89-blocipedia-node.herokuapp.com/" style="text-decoration: solid">See Blocipedia Live</a>
+                            <br>
+                            <a href="https://github.com/navido89/blocipedia-node" style="text-decoration: solid">GitHub Link</Link></a>
+                      </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                        <div class = "container">
+                           <img src="images/Bloccit.jpg" alt="Bloccit Picture" style="width:100%" class = "image">
+                              <div class = "middle">
+                                 <div class = "text">Bloccit</div>
+                              </div>
+                        </div>
+                      <ul>
+                      <li>
+                            <h5 style="text-decoration: underline">Description:</h5>
+                            <p>Bloccit is a reddit inspired app that allows users to create topics, posts, and comments as well as vote and favorite posts. Although 
+                                the content is open to the public, only resgistered users can comment about and rate posts. </p>
+                      </li>
+                      <li>
+                            <h5 style="text-decoration: underline">Technologies:</h5>
+                            <p>Node.js, JavaScript (ES6), Express, Passport, Bcrypt.js, PostgreSQL, Sequelize, Sendgrid, EJS, HTML5, CSS and Jasmine.</p>
+                      </li>
+                      <li>
+                            <h5 style="text-decoration: underline">Links:</h5>
+                            <a href="https://navido89-bloccit.herokuapp.com/" style="text-decoration: solid">See Bloccit Live</a>
+                            <br>
+                            <a href= "https://github.com/navido89/bloccit" style="text-decoration: solid">GitHub Link</Link></a>
+                      </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                        <div class = "container">
+                          <img src="images/Jam-NM.jpg" alt="Jam-NM Picture" style="width:100%" class = "image">
+                          <div class ="middle">
+                           <div class="text">Jam-NM</div>
+                          </div>
+                        </div>
+                      <ul>
+                      <li>
+                            <h5 style="text-decoration: underline">Description:</h5>
+                            <p>Jam-NM is an online music player designed to play music for anyone who enjoys music.
+                            Users have the ability to listen to full albums. Inspired by Spotify it has the main functionalities of any music-player app.</p>
+                      </li>
+                      <li>
+                            <h5 style="text-decoration: underline">Technologies:</h5>
+                            <p>React.JS, JavsScript (ES6), HTML5 and CSS3.</p>
+                      </li>
+                      <li>
+                            <h5 style="text-decoration: underline">Links:</h5>
+                            <a href= "https://github.com/navido89/bloc-jams-react" style="text-decoration: solid">GitHub Link</Link></a>
+                      </li>
+                      </ul>
+                      </div>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                        <div class = "container">
+                           <img src="images/CommandLineApp.jpg" alt="Command Line App" style="width:100%" class = "image">
+                           <div class = "middle">
+                               <div class = "text">Address-Bloc</div>
+                           </div>
+                        </div>
+                     <ul>
+                      <li>
+                          <h5 style="text-decoration: underline">Description:</h5>
+                          <p>A command line application, which replicates an address book application. Users can store and retrieve contacts.</p>
+                      </li>
+                      <li>
+                            <h5 style="text-decoration: underline">Technologies:</h5>
+                            <p>Node.JS, Sequelize (ORM) and PostgreSQL.</p>
+                      </li>
+                      <li>
+                            <h5 style="text-decoration: underline">Links:</h5>
+                            <a href= "https://github.com/navido89/address-bloc" style="text-decoration: solid">GitHub Link</Link></a>
+                      </li>
+                      
+                      
+                     </ul>
+                    </div>
+                  </div>
+                </div>
+                
+               
+                
+                </div>
+
+        
+
+
+
+      </main>
+      
+      
+    
+      <footer>
+      <% include ./partials/footer.ejs %>
+    </footer>
+      
+
+      <% include ./partials/baseScripts.ejs %>
+      <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+      <script src="https://kit.fontawesome.com/0cf4291129.js"></script>
+
+
+    </body>
+    
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" style = "scroll-behavior: smooth">
+  <head>
+    <% include ./partials/head.ejs %>
+  </head>
+  <body>
+
+    <% include ./partials/navbar.ejs %>
+
+
+      <main>
+
+      
+        <section style= "background: transparent; text-align:center" class=" container jumbotron my-4">
+         
+       <% if(messages.error) { %>
+        <div class="alert alert-danger text-dark alert-dismissible fade show">
+                <strong>Error!</strong> Your message has not been sent, please double check your name and email.
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+            </div>  
+        <% } %>
+
+        <% if (messages.notice) { %>
+            
+                <div class="alert alert bg-info text-white alert-dismissible fade show">
+                        <strong>Success!</strong> Your message has been sent successfully.
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    </div>  
+        <% } %> 
+          
+            
+          <img src="images/Head-Shot-For-Portfolio.jpg" class = "rounded-circle rounded mx-auto d-block animated zoomIn" alt="Navid Mashinchi Head-Shot" style="height:230px">
+          <h1 class="display-3 animated zoomIn">Contact</h1>
+          <hr>
+          <a href= "https://linkedin.com/in/navidmashinchi"><ion-icon name="logo-linkedin" style= "font-size: 80px; color: hsl(189, 32%, 45%)"></ion-icon></a>
+          <a href= "https://github.com/navido89"><ion-icon name="logo-github" style= "font-size: 80px; color: hsl(189, 32%, 45%)"></ion-icon></a>
+          <a href= "https://twitter.com/NMashinchi"><ion-icon name="logo-twitter" style= "font-size: 80px; color: hsl(189, 32%, 45%)"></ion-icon></a>
+          <a href= "navid.mashinchi-resume.pdf" target="_blank"><ion-icon name="document"style= "font-size: 80px; color: hsl(189, 32%, 45%)"></ion-icon></a>
+          <a href= "https://www.instagram.com/navido_ma/"><ion-icon name="logo-instagram" style= "font-size: 80px; color: hsl(189, 32%, 45%)"></ion-icon></a>
+
+          <hr>
+        </section>
+
+        <section style="text-align: center; height:10px" class= jumbotron my-1>
+          <h4 class="display-6 lead animated slideInRight">"Communication - the human connection - is the key to personal and career success. -Paul J. Meyer"</h4> 
+        </section>
+
+        <div>
+          <img src="images/numberFive.jpg"  class='w-100' style="height:600px" alt="number one image">
+        </div>
+        <br>
+
+        <div class= "form-group container lead">
+        <form action="/contact" id="contact-form" method="post" role="form">
+            <fieldset>
+              <label for="name">Name:</label>
+              <input id="name" name="name" type="text" placeholder="Your name must be at least 2 characters in length and can not be empty." required="required"class="form-control">
+              <small class="text-muted" id="nameHelp"></small>
+              <br>
+              <label for="email">Email:</label>
+              <br>
+              <input id="email" name="email" type="text" placeholder="Your email address must be a valid." required="required"class="form-control">
+              <small class="text-muted" id="emailHelp"></small>
+
+              <br>
+              <label for="message">Message:</label>
+              <br>
+              <textarea id="message" name="message" placeholder="Enter your message here." rows="3" required="required" class="form-control"></textarea>
+              <br>
+              <button class="btn btn-info" type="submit">Send</button>
+            </fieldset>
+          </form>
+          </div>
+        
+      
+      
+
+          
+        
+        
+      </main>
+      
+      
+    
+      <footer>
+        <% include ./partials/footer.ejs %>
+      </footer>
+      
+
+      <% include ./partials/baseScripts.ejs %>
+      <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+      <script src="https://kit.fontawesome.com/0cf4291129.js"></script>
+
+
+    </body>
+    
+</html>

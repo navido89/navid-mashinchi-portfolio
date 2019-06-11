@@ -31,7 +31,7 @@ module.exports = {
             req.flash("error")
           }
           else {
-            req.flash("notice");
+            req.flash("notice", "sucess");
             res.render('static/contact');
           }
         });

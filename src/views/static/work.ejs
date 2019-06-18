@@ -3,120 +3,11 @@
 
   <head>
     <% include ./partials/head.ejs %>
+    <link rel="stylesheet" href="css/work.css">
+
   </head>
 
-  <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        body {
-          background-color: white;
-          padding: 20px;
-          
-        }
-        
-        
-        .main {
-          max-width: 1000px;
-          margin: auto;
-        }
-        
-       
-        
-        .row {
-          margin: 8px -16px;
-          
-        }
-        
-        
-        .row,
-        .row > .column {
-          padding: 8px;
-        }
-        
-        
-        .column {
-          float: left;
-          width: 25%;
-        }
-        
-        
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        
-        
-        .content {
-          background-color: #f9f9f9;
-          padding: 10px;
-          }
-        
-        
-        @media screen and (max-width: 900px) {
-          .column {
-            width: 50%;
-          }
-        }
-        
-       
-        @media screen and (max-width: 600px) {
-          .column {
-            width: 100%;
-          }
-        }
-
-        .container {
-  position: relative;
-  width: 100%;
-}
-
- .image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  }
-
- .middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
- .container:hover .image {
-  opacity: 0.3;
- 
   
-}
-
- .container:hover .middle {
-  opacity: 0.9;
-  width: 100%;
-  height: 100%;
-  background:
-  linear-gradient(
-    hsl(189, 32%, 45%), 
-      black
-    )
-
-}
-
- .text {
-  background-color: transparent;
-  color: white;
-  font-size: 50px;
-}
-  </style>
   
   <body>
 
@@ -126,8 +17,8 @@
 
           <section style= "background: transparent; text-align:center" class=" container jumbotron my-4">
             
-              <img src="images/Head-Shot-For-Portfolio.jpg" class = "rounded-circle rounded mx-auto d-block animated zoomIn" alt="Navid Mashinchi Head-Shot" style="height:230px">
-              <h1 class="display-3 animated zoomIn">WORK</h1>
+            <img src="images/Work1.JPEG" class = "img-thumbnail rounded mx-auto d-block animated zoomIn" alt="Navid Mashinchi Head-Shot" style="height:350px; width:600px">
+            <h1 class="display-3 animated zoomIn">WORK</h1>
               <hr>
               <a href= "https://linkedin.com/in/navidmashinchi"><ion-icon name="logo-linkedin" style= "font-size: 80px; color:hsl(189, 32%, 45%)"></ion-icon></a>
               <a href= "https://github.com/navido89"><ion-icon name="logo-github" style= "font-size: 80px; color: hsl(189, 32%, 45%)"></ion-icon></a>

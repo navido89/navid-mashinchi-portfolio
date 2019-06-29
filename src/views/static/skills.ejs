@@ -2,75 +2,126 @@
 <html lang="en" style = "scroll-behavior: smooth">
   <head>
     <% include ./partials/head.ejs %>
+    <link rel="stylesheet" href="css/skills.css">
+
   </head>
+
+  
   <body>
 
     <% include ./partials/navbar.ejs %>
 
       <main>
 
-          <section style= "background: transparent; text-align:center" class=" container jumbotron my-4">
+        <section style= "text-align:center" class="jumbotron jumbotron1">
+          <div class="container animated fadeIn">
+          
+          <div>
             
-              <img src="images/Work3.JPEG" class = "img-thumbnail rounded mx-auto d-block animated zoomIn" alt="Navid Mashinchi Head-Shot" style="height:350px; width:600px">
-              <h1 class="display-3 animated zoomIn">SKILLS</h1>
-              <hr>
-              <a href= "https://linkedin.com/in/navidmashinchi"><ion-icon name="logo-linkedin" style= "font-size: 80px; color:hsl(189, 32%, 45%)"></ion-icon></a>
-              <a href= "https://github.com/navido89"><ion-icon name="logo-github" style= "font-size: 80px; color: hsl(189, 32%, 45%)"></ion-icon></a>
-              <a href= "https://twitter.com/NMashinchi"><ion-icon name="logo-twitter" style= "font-size: 80px; color:hsl(189, 32%, 45%)"></ion-icon></a>
-              <a href= "https://www.instagram.com/navido_ma/"><ion-icon name="logo-instagram" style= "font-size: 80px; color: hsl(189, 32%, 45%)"></ion-icon></a>
-              <a href= "navid.mashinchi-resume.pdf" target="_blank"><ion-icon name="document"style= "font-size: 80px; color: hsl(189, 32%, 45%)"></ion-icon></a>
-              <hr>
-          </section>
+          <img src="images/Head-Shot-1.jpg" class = "rounded-circle mx-auto d-block landingPic" alt="Navid Mashinchi Head-Shot" style="height:150px; width:150px;">
+          
+            <h1 style="color:black; margin-top:15px">NAVID MASHINCHI</h1>
+            <p class="lead"> FULL STACK WEB DEVELOPER </p>
+            <hr>
+            
+            <a href= "https://github.com/navido89"><i class ="fab fa-github" style= "font-size: 50px; color: black"></i></a>
+            <a href= "https://linkedin.com/in/navidmashinchi"><i class ="fab fa-linkedin" style= "font-size: 50px;"></i></a>
+            <a href= "https://www.instagram.com/navido_ma/"><i class ="fab fa-instagram fa-5x" style= "font-size: 50px;"></i></a>            
+            <a href= "https://twitter.com/NMashinchi"><i class ="fab fa-twitter" style= "font-size: 50px; color: twitter"></i></a>
+            <a href= "navid.mashinchi-resume.pdf" target="_blank"><i class="fas fa-file" style= "font-size: 50px; color: black"></i></ion-icon></a>
+
+          </div>
+          
+            <hr>
+            <h1 style="color:black; margin-top:15px">SKILLS</h1>
+
+        </section>
   
           <section style="text-align: center; height:10px" class= jumbotron my-1>
-            <h4 class="display-6 lead animated slideInRight" style = "font-family: cursive">"Opportunities don't happen, you create them." - Chris Grosser</h4> 
+            <h4 class="display-6 lead animated slideInRight" style = "color: #c71585">"Opportunities don't happen, you create them." - Chris Grosser</h4> 
           </section>
   
-          <div>
-              <img src="images/numberThree.jpg"  class='w-100' style="height:600px" alt="number one image">
-          </div>
+          
         <br>
-        <section style= "text-align:center; height:200px" class="jumbotron my-2">
-            <p class= "lead">
-                I constistently use JavaScript, HTML and CSS in my projects. In regards to Computer Science, I have a very good understanding of data structures, searching and sorting algorithms and the concepts of time and space complexities.
-            </p>
-            <i class="fab fa-js-square" style= "font-size: 45px; color: hsl(189, 32%, 45%)"></i>
-            <i class="fab fa-html5" style= "font-size: 45px; color: hsl(189, 32%, 45%)"></i>
-            <i class="fab fa-css3-alt" style= "font-size: 45px; color: hsl(189, 32%, 45%)"></i>
-        </section>
-        <br>
-        <section style= "text-align:center; height:200px" class="jumbotron my-2">
-            <p class= "lead">
-                I am currently specializing in Node.JS and Express on the back end side. In my previous projects I have also used NPM and had also some exposure to Passport. Further more I have worked with React.JS and Bootstrap on the client side. 
-            </p>
-            <i class="fab fa-node" style= "font-size: 45px; color: hsl(189, 32%, 45%)"></i>
-            <i class="fab fa-react" style= "font-size: 45px; color: hsl(189, 32%, 45%)"></i>
-            <i class="fab fa-bootstrap" style= "font-size: 45px; color: hsl(189, 32%, 45%)"></i>
-        </section>  
-        <br>
-        <section style= "text-align:center; height:200px" class="jumbotron my-2">
-            <p class= "lead">
-                In regards to non-relational databases my experience is using Google's Firebase service. When it comes to realtional databases, I have setup from scratch and interacted with PostgreSQL, and used Sequelize as Object Relational Mapping (ORM) interface.
-            </p>
-            <i class="fas fa-database" style= "font-size: 45px; color: hsl(189, 32%, 45%)"></i>
-            <i class="fas fa-server" style= "font-size: 45px; color: hsl(189, 32%, 45%)"></i>
-            <i class="fas fa-file-signature" style= "font-size: 45px; color: hsl(189, 32%, 45%)"></i>
-        </section>    
-        <br>
-        <section style= "text-align:center; height:200px" class="jumbotron my-2">
-            <p class= "lead">
-                    When starting a new project, one of the key aspects lies in planning and preperation. I set a clear set of goals and scope and for that, I use Sketch. Version control tools are also a must, I work with git and GitHub on a regular basis.
-            </p>
-            <i class="fab fa-git" style= "font-size: 45px; color:hsl(189, 32%, 45%)"></i>
-            <i class="fab fa-github" style= "font-size: 45px; color: hsl(189, 32%, 45%)"></i>
-            <i class="fab fa-sketch" style= "font-size: 45px; color: hsl(189, 32%, 45%)"></i>
-            
-        </section> 
-        <br>
-        <section class= "text-center">
-           
-        </section>
 
+        <div id="accordion">
+            <div class="card" style="background-color: #c71585; color:white">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-light d-inline mx-auto center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fab fa-js-square" style= "font-size: 100px; color: #c71585"></i>
+                      <i class="fab fa-html5" style= "font-size: 100px; color: #c71585"></i>
+                      <i class="fab fa-css3-alt" style= "font-size: 100px; color: #c71585"></i>
+                      <br>        
+                     Click to collapse    
+                    </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    I constistently use JavaScript, HTML and CSS in my projects. In regards to Computer Science, I have a very good understanding of data structures, searching and sorting algorithms and the concepts of time and space complexities.
+                  </div>
+              </div>
+            </div>
+            <div class="card" style="color: #c71585; background-color:white">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-light collapsed d-inline mx-auto center" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="fab fa-node" style= "font-size: 100px; color: #c71585"></i>
+                      <i class="fab fa-react" style= "font-size: 100px; color: #c71585"></i>
+                      <i class="fab fa-bootstrap" style= "font-size: 100px; color: #c71585"></i>
+                      <br>        
+                     Click to collapse                  
+                    </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    I am currently specializing in Node.JS and Express on the back end side. In my previous projects I have also used NPM and had also some exposure to Passport. Further more I have worked with React.JS and Bootstrap on the client side. 
+                  </div>
+              </div>
+            </div>
+            <div class="card" style="background-color: #c71585; color:white">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-light collapsed d-inline mx-auto center" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <i class="fas fa-database" style= "font-size: 100px; color: #c71585"></i>
+                      <i class="fas fa-server" style= "font-size: 100px; color: #c71585"></i>
+                      <i class="fas fa-file-signature" style= "font-size: 100px; color: #c71585"></i>    
+                      <br>        
+                     Click to collapse              
+                    </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    In regards to non-relational databases my experience is using Google's Firebase service. When it comes to realtional databases, I have setup from scratch and interacted with PostgreSQL, and used Sequelize as Object Relational Mapping (ORM) interface.
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="color: #c71585; background-color:white">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button class="btn btn-light collapsed d-inline mx-auto center" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <i class="fab fa-git" style= "font-size: 100px; color: #c71585"></i>
+            <i class="fab fa-github" style= "font-size: 100px; color:  #c71585"></i>
+            <i class="fab fa-sketch" style= "font-size: 100px; color: #c71585"></i>  
+            <br>        
+                     Click to collapse             
+          </button>
+                </h5>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                    In regards to non-relational databases my experience is using Google's Firebase service. When it comes to realtional databases, I have setup from scratch and interacted with PostgreSQL, and used Sequelize as Object Relational Mapping (ORM) interface.
+                  </div>
+              </div>
+            </div>
+          </div>
+
+       
 
 
       </main>

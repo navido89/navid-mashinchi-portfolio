@@ -4,157 +4,248 @@
   <head>
     <% include ./partials/head.ejs %>
     <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/work.css">
 
   </head>
 
-  
-  
-  <body>
+<body>
 
     <% include ./partials/navbar.ejs %>
 
       <main>
 
-          <section style= "background: transparent; text-align:center" class=" container jumbotron my-4">
+          <section style= "text-align:center" class="jumbotron jumbotron1">
+              <div class="container animated fadeIn">
+              
+              <div>
+                
+              <img src="images/Head-Shot-1.jpg" class = "rounded-circle mx-auto d-block landingPic" alt="Navid Mashinchi Head-Shot" style="height:150px; width:150px;">
+              
+                <h1 style="color:black; margin-top:15px">NAVID MASHINCHI</h1>
+                <p class="lead"> FULL STACK WEB DEVELOPER </p>
+                <hr>
+                
+                <a href= "https://github.com/navido89"><i class ="fab fa-github" style= "font-size: 50px; color: black"></i></a>
+                <a href= "https://linkedin.com/in/navidmashinchi"><i class ="fab fa-linkedin" style= "font-size: 50px;"></i></a>
+                <a href= "https://www.instagram.com/navido_ma/"><i class ="fab fa-instagram fa-5x" style= "font-size: 50px;"></i></a>            
+                <a href= "https://twitter.com/NMashinchi"><i class ="fab fa-twitter" style= "font-size: 50px; color: twitter"></i></a>
+                <a href= "navid.mashinchi-resume.pdf" target="_blank"><i class="fas fa-file" style= "font-size: 50px; color: black"></i></ion-icon></a>
+    
+              </div>
+              
+                <hr>
+                <h1 style="color:black; margin-top:15px">WORK</h1>
+
+            </section>
+    
+            <section style="text-align: center; height:10px" class= jumbotron my-1>
+              <h4 class="display-6 lead animated slideInRight" style="color: #c71585">"Never let success go to your head and never let failure go to your heart" -Ziad K.Abdelnour</h4> 
+            </section>
             
-            <img src="images/Work1.JPEG" class = "img-thumbnail rounded mx-auto d-block animated zoomIn" alt="Navid Mashinchi Head-Shot" style="height:350px; width:600px">
-            <h1 class="display-3 animated zoomIn">WORK</h1>
-              <hr>
-              <a href= "https://linkedin.com/in/navidmashinchi"><ion-icon name="logo-linkedin" style= "font-size: 80px; color:hsl(189, 32%, 45%)"></ion-icon></a>
-              <a href= "https://github.com/navido89"><ion-icon name="logo-github" style= "font-size: 80px; color: hsl(189, 32%, 45%)"></ion-icon></a>
-              <a href= "https://twitter.com/NMashinchi"><ion-icon name="logo-twitter" style= "font-size: 80px; color:hsl(189, 32%, 45%)"></ion-icon></a>
-              <a href= "https://www.instagram.com/navido_ma/"><ion-icon name="logo-instagram" style= "font-size: 80px; color: hsl(189, 32%, 45%)"></ion-icon></a>
-              <a href= "navid.mashinchi-resume.pdf" target="_blank"><ion-icon name="document"style= "font-size: 80px; color: hsl(189, 32%, 45%)"></ion-icon></a>
-              <hr>
-          </section>
-  
-          <section style="text-align: center; height:10px" class= jumbotron my-1>
-            <h4 class="display-6 lead animated slideInRight" style = "font-family: cursive">"Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do." - Pele</h4> 
-          </section>
-  
-          <div>
-              <img src="images/numberFour.jpg"  class='w-100' style="height:600px" alt="number one image">
-          </div>
-        <br>
+            <br>
 
-        <div class ="lead">
+            
 
-            <div class="row ">
-                  <div class="column">
-                    <div class="content">
-                      <div class = "container"> 
-                        <img src="images/Blocipedia.jpg" alt="Blocipedia Picture" style="width:100%" class="image">
-                          <div class = "middle">
-                            <div class ="text">Blocipedia</div>
-                          </div>     
+        <section>  
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
+
+                    </ol>
+                    
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100"src="images/Logo2.png" alt="First slide">
                       </div>
-                      <ul>
-                      <li>
-                            <h5 style="text-decoration: underline">Description:</h5>
-                            <p>Blocipedia is an application that allows users to create, collaborate, and share wikis. Standard Users have the ability to contribute to 
-                                    and create public wikis while Premium users can create private wikis and add contributors.</p>
-                      </li>
-                      <li>
-                            <h5 style="text-decoration: underline">Technologies:</h5>
-                            <p>Node.js, JavaScript (ES6), Express, Passport, Bcrypt.js, PostgreSQL, Stripe, Sequelize, Sendgrid, EJS, HTML5, CSS and Jasmine.</p>
-                      </li>
-                      <li>
-                            <h5 style="text-decoration: underline">Links:</h5>
-                            <a href="https://navido89-blocipedia-node.herokuapp.com/" style="text-decoration: solid">See Blocipedia Live</a>
-                            <br>
-                            <a href="https://github.com/navido89/blocipedia-node" style="text-decoration: solid">GitHub Link</Link></a>
-                      </li>
-                      </ul>
-                    </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="images/Learn2.png" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="images/Code2.png" alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="images/Test2.png" alt="Fourth slide">
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="images/Launch2.png" alt="Fifth slide">
+                        
+                      </div>
+                    
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
                   </div>
-                  <div class="column">
-                    <div class="content">
-                        <div class = "container">
-                           <img src="images/Bloccit.jpg" alt="Bloccit Picture" style="width:100%" class = "image">
-                              <div class = "middle">
-                                 <div class = "text">Bloccit</div>
+    </section>
+
+  </div>
+  <div class="container">
+
+      <div class="row">
+          <!-- Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                  <div class="mainflip">
+                      <div class="frontside">
+                          <div class="card">
+                              <div class="card-body text-center">
+                                  <p><img class=" img-fluid" src="images/locus-project.png" alt="card image"></p>
+                                  <br>
+                                  <hr>
+                                  <h4 class="card-title">Locus Health</h4>
+                                  <hr>
+                                  <a href="https://navido89-locus-health-centre.herokuapp.com/" target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">See Locus Health Live</button></a>
+                                  <br>
+                                  <a href= "https://github.com/navido89/Locus-Health-Center" target="_blank"style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">GitHub Link</button></a>
+                                  
                               </div>
-                        </div>
-                      <ul>
-                      <li>
-                            <h5 style="text-decoration: underline">Description:</h5>
-                            <p>Bloccit is a reddit inspired app that allows users to create topics, posts, and comments as well as vote and favorite posts. Although 
-                                the content is open to the public, only resgistered users can comment about and rate posts. </p>
-                      </li>
-                      <li>
-                            <h5 style="text-decoration: underline">Technologies:</h5>
-                            <p>Node.js, JavaScript (ES6), Express, Passport, Bcrypt.js, PostgreSQL, Sequelize, Sendgrid, EJS, HTML5, CSS and Jasmine.</p>
-                      </li>
-                      <li>
-                            <h5 style="text-decoration: underline">Links:</h5>
-                            <a href="https://navido89-bloccit.herokuapp.com/" style="text-decoration: solid">See Bloccit Live</a>
-                            <br>
-                            <a href= "https://github.com/navido89/bloccit" style="text-decoration: solid">GitHub Link</Link></a>
-                      </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="content">
-                        <div class = "container">
-                          <img src="images/Jam-NM.jpg" alt="Jam-NM Picture" style="width:100%" class = "image">
-                          <div class ="middle">
-                           <div class="text">Jam-NM</div>
                           </div>
-                        </div>
-                      <ul>
-                      <li>
-                            <h5 style="text-decoration: underline">Description:</h5>
-                            <p>Jam-NM is an online music player designed to play music for anyone who enjoys music.
-                            Users have the ability to listen to full albums. Inspired by Spotify it has the main functionalities of any music-player app.</p>
-                      </li>
-                      <li>
-                            <h5 style="text-decoration: underline">Technologies:</h5>
-                            <p>React.JS, JavsScript (ES6), HTML5
-                                <br> IonIcons and CSS3.</p>
-                      </li>
-                      <li>
-                            <h5 style="text-decoration: underline">Links:</h5>
-                            <a href= "https://github.com/navido89/bloc-jams-react" style="text-decoration: solid">GitHub Link</Link></a>
-                      </li>
-                      </ul>
+                      </div>
+                      <div class="backside">
+                              <div class="card">
+                                  <div class="card-body mt-4">
+                                      <h5 style="text-decoration: underline">Description:</h5>
+                                      <p>Locus Health is a health centre based in Vancouver, Canada. The centre provides various services
+                                      such as personal training, registered massage therapy and more. This website has been created to improve the front-end. </p>
+                               
+                                      <h5 style="text-decoration: underline">Technologies:</h5>
+                                      <p>Node.JS, JavaScript (ES6), Express, Nodemailer, EJS, HTML5, CSS, Bodyparser, Dotenv, Bootstrap 4 and Jasmine.</p>
+                                      
+                                    </div>
+                              </div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+          <!-- ./Team member -->
+          <!-- Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card" style="background-color:#c71585; color: white">
+                                  <div class="card-body text-center">
+                                          <p><img class=" img-fluid" src="images/Blocipedia.jpg" alt="card image"></p>
+                                          <br>
+                                          <hr>
+                                          <h4 class="card-title">Blocipedia</h4>
+                                          <hr>
+                                          <a href="https://navido89-blocipedia-node.herokuapp.com/"  target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center button2">See Blocipedia Live</button></a>
+                                          <br>
+                                          <a href="https://github.com/navido89/blocipedia-node" target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center button2">GitHub Link</button></a>
+                                          
+                                              
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                                  <div class="card" style="background-color:#c71585; color: white">
+                                      <div class="card-body mt-4">
+                                         
+                                                    <h5 style="text-decoration: underline">Description:</h5>
+                                                    <p>Blocipedia is an app that allows users to create, collaborate, and share wikis. Standard Users have the ability to contribute to 
+                                                      and create public wikis while Premium users can create private wikis and add contributors.</p>
+                                             
+                                                    <h5 style="text-decoration: underline">Technologies:</h5>
+                                                    <p>Node.JS, JavaScript (ES6), Express, Passport, Bcrypt.js, PostgreSQL, Stripe, Sequelize, Sendgrid, EJS, HTML5, CSS and Jasmine.</p>
+                                                    
+                                      </div>
+                                  </div>
+                              </div>
                       </div>
                   </div>
-                  <div class="column">
-                    <div class="content">
-                        <div class = "container">
-                           <img src="images/CommandLineApp.jpg" alt="Command Line App" style="width:100%" class = "image">
-                           <div class = "middle">
-                               <div class = "text">Address-Bloc</div>
-                           </div>
-                        </div>
-                     <ul>
-                      <li>
-                          <h5 style="text-decoration: underline">Description:</h5>
-                          <p>A command line application, which replicates an address book application. Users can store and retrieve contacts.</p>
-                      </li>
-                      <li>
-                            <h5 style="text-decoration: underline">Technologies:</h5>
-                            <p>Node.JS, Sequelize and PostgreSQL.</p>
-                      </li>
-                      <li>
-                            <h5 style="text-decoration: underline">Links:</h5>
-                            <a href= "https://github.com/navido89/address-bloc" style="text-decoration: solid">GitHub Link</Link></a>
-                      </li>
-                      </ul>
-                    </div>
+              </div>
+          <!-- ./Team member -->
+          <!-- Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card">
+                                  <div class="card-body text-center">
+                                          <p><img class=" img-fluid" src="images/Bloccit.jpg" alt="card image"></p>
+                                          <br>
+                                          <hr>
+                                          <h4 class="card-title">Bloccit</h4>
+                                          <hr>
+                                          <a href="https://navido89-bloccit.herokuapp.com/" target="_blank"style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">See Bloccit Live</button></a>
+                                          <br>
+                                          <a href= "https://github.com/navido89/bloccit" target="_blank"style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">GitHub Link</button></Link></a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                                  <div class="card">
+                                      <div class="card-body mt-4">
+                                          
+                                                    <h5 style="text-decoration: underline">Description:</h5>
+                                                    <p>Bloccit is a reddit inspired app that allows users to create topics, posts, and comments as well as vote and favorite posts. Although 
+                                                        the content is open to the public, only resgistered users can comment about and rate posts. </p>
+                                              
+                                                    <h5 style="text-decoration: underline">Technologies:</h5>
+                                                    <p>Node.JS, JavaScript (ES6), Express, Passport, Bcrypt.js, PostgreSQL, Sequelize, Sendgrid, EJS, HTML5, CSS and Jasmine.</p>
+                                                    
+                                      </div>
+                                  </div>
+                              </div>
+                      </div>
                   </div>
-                </div>
-                
-               
-                
-                </div>
+              </div>
+          <!-- ./Team member -->
+          <!-- Team member -->
+          <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                      <div class="mainflip">
+                          <div class="frontside">
+                              <div class="card" style="background-color:#c71585; color: white">
+                                  <div class="card-body text-center">
+                                          <p><img class=" img-fluid" src="images/Jam-NM.jpg" alt="card image"></p>
+                                          <br>
+                                          <hr>
+                                          <h4 class="card-title">Jam-NM</h4>
+                                          <hr>
+                                          <a href="" target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center button2">See JAM-NM Live</button></a>
+                                          <br>
+                                          <a href= "https://github.com/navido89/bloc-jams-react" target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center button2">GitHub Link</button></a>            
+                                </div>
+                              </div>
+                          </div>
+                          <div class="backside">
+                                  <div class="card"style="background-color:#c71585; color: white">
+                                      <div class="card-body mt-4">
+                                          
+                                                    <h5 style="text-decoration: underline">Description:</h5>
+                                                    <p>Jam-NM is an online music player designed to play music for anyone who enjoys music from anywhere at anytime.
+                                                    Users have the ability to listen to full albums. Inspired by Spotify it has the main functionalities of any music-player app.</p>
+                                                    <h5 style="text-decoration: underline">Technologies:</h5>
+                                                    <p>React.JS, 
+                                                      <br>
+                                                      JavsScript (ES6), 
+                                                      <br> HTML5
+                                                        <br> IonIcons
+                                                        <br> CSS3.</p>
+                                                        <br>
+                                                        <br>
+                                                        
+                                    </div>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
-        
-
-
-
-      </main>
+   </main>
       
       
     

@@ -23,7 +23,9 @@ module.exports = {
           from: req.body.name + ' &lt;' + req.body.email + '&gt;',
           to: process.env.GMAIL_USER,
           subject: 'New message from contact form from my portfolio website',
-          text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
+          text: `${req.body.name} (${req.body.phone}) (${req.body.email}) says: ${req.body.message}`,
+          replyTo: req.body.email,
+
         };
         smtpTrans.sendMail(mailOpts, function (error, response) {
           if (error) {

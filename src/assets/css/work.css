@@ -114,9 +114,13 @@ display:block!important;
 
 .jumbotron1{
 margin-top: 20px;
-background-image: url("/images/Picture1.png");
+background-image: url("/images/Picture2.png");
 background-size: cover;
 color: white;
+-webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 
 .fadeIn {

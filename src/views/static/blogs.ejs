@@ -2,10 +2,8 @@
 <html lang="en" style = "scroll-behavior: smooth">
 
   <head>
-      <% include ./partials/head.ejs %>
-    <link rel="stylesheet" href="css/landing.css">
-
- 
+    <% include ./partials/head.ejs %>
+    <link rel="stylesheet" href="css/blogs.css">
   </head>
 
   <style>
@@ -53,12 +51,12 @@ animation-delay: 0.5s;
               </div>
               
                 <hr>
-                <h1 style="color:black; margin-top:15px">PORTFOLIO</h1>
+                <h1 style="color:black; margin-top:15px">Blogs</h1>
     
             </section>
     
             <section style="text-align: center; height:10px" class= jumbotron my-1>
-              <h4 class="display-6 lead animated slideInRight" style = "font-family: myriad; color: #c71585">Welcome to my site!</h4> 
+              <h4 class="display-6 lead animated slideInRight" style = "font-family: myriad; color: #c71585">“If you can’t explain it simply, you don’t understand it well enough.” –Albert Einstein</h4> 
             </section>
     
             
@@ -69,7 +67,7 @@ animation-delay: 0.5s;
         
         
           <div class="row">
-            <div class="leftcolumn">
+            <div class="container">
               <div class="card animated fadeIn">
                 <h2>Server Side JS with Node.JS </h2>
                 <h5>June 3, 2019</h5>
@@ -220,37 +218,57 @@ animation-delay: 0.5s;
                 </div>  
 
                 </div>
-            </div>
-            <div class="rightcolumn">
-              <div class="card animated fadeIn">
-                <h2>About Me</h2>
-                <img src="images/About.JPEG" class="img-fluid"></img>
-                <p style="margin-top:25px"> Welcome to my portfolio. I am a California based Full Stack Web Developer...</p>
-                <a href = "/about"><button type="button" class="button btn">Learn More About Me</button></a>
-              </div>
-              <div class="card animated fadeIn">
-                <h3>Recent Work</h3>
-                <a href = "https://navido89-locus-health-centre.herokuapp.com/" target="_blank">
-                  <img src="images/locus-project.png" class="img-fluid"></img>
-                </a>
-                <hr>
-                <a href = "https://navido89-blocipedia-node.herokuapp.com/" target="_blank">
-                  <img src="images/Blocipedia.jpg" class="img-fluid"></img>
-                </a>
-                <hr>
-                <br>
-                <a href = "https://navido89-bloccit.herokuapp.com/" target="_blank">
-                  <img src="images/Bloccit.jpg" class="img-fluid"></img>
-                </a>
-                
-                <br>
-              </div>
-              <div class="card animated fadeIn">
-                <h3>All Blogs</h3>
-                <a href = "/Blogs"><button type="button" class="button btn">Blogs History</button></a>
 
-              </div>
+                <div class="card animated fadeIn">
+                        <h2>My first month at Bloc</h2>
+                        <h5>September 24, 2018</h5>
+                        <img src="images/Bloc.jpeg" class="img-fluid" style="width:50%"></img>
+                        </a>
+                        <p class=".lead" style="margin-top:25px">It’s been an interesting journey so far in my full stack web developer program through Bloc. I didn’t know what to expect, since I had no background at all when it comes to coding.</p>
+                        <p>
+                        <button class="btn button" type="button" data-toggle="collapse" data-target="#collapseArticle4" aria-expanded="false" aria-controls="collapseArticle4">
+                            Continue Reading
+                      </button>
+                      </p>
+                      <div class="collapse" id="collapseArticle4">
+                        <div class="card card-body">
+                        <p>I was curious and anxious knowing that I am entering a world full of unknowns, but I like challenges and like to prove myself every day to reach my goals. In this article I am going to talk about my first impressions as a programmer in the bloc program.</p>
+                        <p>The first module was about learning the fundamentals of HTML, CSS, Git, GitHub and JavaScript. First, I have to say that the overall layout of bloc’s dashboard is very simple to follow. This made it very easy to get settled into my new working environment. Second, each checkpoint consists of an assignment that will be evaluated by a mentor in order to pass to the next checkpoint. I like the idea of the assignments, because it allows you to apply the learning objectives following the readings. After finishing a couple assignments, I noticed that I would do a lot of research on the web on my own in order to get a deeper understanding of the concepts. Beside the web, I would also use Slack as a resource a lot. The slack community is a very good resource, because it allows students to interact with each other and to ask questions to mentors for help. Overall, I really liked the quick respond times from the mentors. They are a massive help!</p>
+                        <img src="images/coding.png" class="img-fluid" style="width:50%;"></img>
+                        <br>
+                        <p>At the end of each module there is an assessment, that allows you to prove that you have mastered the content in order to advance to the next module. The assessment contains explaining concepts, multiple choice questions, interpreting codes and writing codes. At the end of the assessment you will receive your grade. You have to receive a 7 out of 10 to pass and have 3 tries. If you don’t pass after the third try you will forfeit your Tuition Reimbursement Guarantee. So a lot is on the line ….I have studied a week to prepare myself for the assessment. Fortunately I passed and I am very excited to start the next module. I have to say I really enjoy the program. Your success is based on the amount of time you put in. I would have never thought I would learn so much in a short period of time. It’s very exciting and I can’t wait to implement my skills in the projects coming up.</p>
+                        <p>I will stop here for now. I have my first meeting tomorrow with my new mentor and I am looking forward to learn more and more :)</p>
+      
+                        </div>
+                      </div>  
+      
+                </div>
+
+                <div class="card animated fadeIn">
+                        <h2>How Bloc and I met.</h2>
+                        <h5>September 14, 2018</h5>
+                        <img src="images/code1.jpg" class="img-fluid" style="width:50%"></img>
+                        </a>
+                        <p class=".lead" style="margin-top:25px">If someone would have told me that I will get into programming 10 years ago, I would have just laughed at that thought and take it as a joke. Me and computers? No chance….</p>
+                        <p>
+                        <button class="btn button" type="button" data-toggle="collapse" data-target="#collapseArticle5" aria-expanded="false" aria-controls="collapseArticle5">
+                            Continue Reading
+                      </button>
+                      </p>
+                      <div class="collapse" id="collapseArticle5">
+                        <div class="card card-body">
+                        <p>My entire life was surrounded by soccer. I was born in Germany and grew up breathing the soccer culture every single day and second. I developed a strong passion for the sport. Playing in Germany at the highest youth level gave me a strong foundation to succeed later in my career on and off the field. In this post I will talk about my past and how I found my way to coding.</p>
+                        <p>I immigrated to Canada in 2006 and even though the country wasn’t known for it’s soccer culture, I still continued to peruse my dream. Within 6 months, I signed with the Vancouver Whitecaps and played for the club for several years. Following my stint with the club, I accepted a scholarship to attend the University of British Columbia. Winning 2 national championships and graduating with a commerce degree from UBC were a number of highlights that I am still proud of as of today.</p> 
+                        <p>Upon graduation from University, I found my way back into the professional game. Not as a player but this time as an Analyst & Scout for a major league soccer team. I felt it was the right time to hang up the boots and use my strengths off the field. Throughout my years as an analyst, I was constantly working with various software and websites to do my job. This is the time, where I started to become more and more curious on how these software and web pages are actually build. I was hooked to my laptop as an analyst and started to develop a strong interest to the world of coding. I became fascinated to programming, so I decided to pursue my interest of coding.</p>
+                        <p>Prior to attending Bloc, I discussed with various professionals within the industry which educational path would probably be the best fit for me. After tons of research, I committed to Bloc and I am looking forward to this journey.</p>
+                        <p>I will stop right here for now…..In my next post I will talk about my first month at Bloc and how my life has been as a coder.</p>
+
+                        </div>
+                      </div>  
+      
+                </div>
             </div>
+           
           </div>
           </section>
         

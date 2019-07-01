@@ -26,20 +26,21 @@ animation-delay: 0.5s;
   
   <body>
 
-    <% include ./partials/navbar.ejs %>
 
       <main>
         
-      
-          <section style= "text-align:center" class="jumbotron jumbotron1">
+      <div class="mainpage">
+          <% include ./partials/navbarLanding.ejs %>
+
+          <section style= "text-align:center" class="">
               <div class="container animated fadeIn">
               
               <div>
                 
-              <img src="images/Head-Shot-1.jpg" class = "rounded-circle mx-auto d-block landingPic" alt="Navid Mashinchi Head-Shot" style="height:150px; width:150px;">
+              <img src="images/Head-Shot-1.jpg" class = "rounded-circle mx-auto d-block landingPic" alt="Navid Mashinchi Head-Shot" style="height:150px; width:150px; margin-top:100px">
               
                 <h1 style="color:black; margin-top:15px">NAVID MASHINCHI</h1>
-                <p class="lead"> FULL STACK WEB DEVELOPER </p>
+                <h4> FULL STACK WEB DEVELOPER </h4>
     
     
                 <hr>
@@ -53,21 +54,30 @@ animation-delay: 0.5s;
               </div>
               
                 <hr>
-                <h1 style="color:black; margin-top:15px">PORTFOLIO</h1>
+                <h1 style="color:black; margin-top:15px">Portfolio</h1>
+
+                <p>
+                    <a href="#greeting" style="text-align:center; "><i class="fas fa-chevron-circle-down button1"></i></a>
+    
+                </p>
     
             </section>
+
+            
+    </div>        
     
-            <section style="text-align: center;" class= jumbotron my-1>
-              <h3 class="animated slideInRight" style = "font-family: myriad; color: #c71585"> Hello! Welcome to my site. Shall we start scrolling and learn more about me. </h3> 
+
+            
+            <section style="text-align: center;" id="greeting" class= jumbotron my-1>
+              <h3 class="animated slideInRight"  style = "font-family: myriad; color: #c71585"> Hello! Welcome to my site.</h3> 
             </section>
+         
     
             
             <br>
+            
 
-        
-<section class = jumbotron>
-        
-        
+            
           <div class="row">
             <div class="leftcolumn">
               <div class="card animated fadeIn">
@@ -75,7 +85,7 @@ animation-delay: 0.5s;
                 <h5>June 3, 2019</h5>
                 <img src="images/nodejs.png" class="img-fluid" style="width:50%"></img>
                 </a>
-                <p class=".lead" style="margin-top:25px">It’s been about a couple months since I posted my last story, but there is a reason why I didn’t get a chance to post any updates on my journey in the world of programming. Let me tell you one thing, it’s been a heck of a ride and super rewarding seeing the improvements in my programming skills.</p>
+                <p style="margin-top:25px">It’s been about a couple months since I posted my last story, but there is a reason why I didn’t get a chance to post any updates on my journey in the world of programming. Let me tell you one thing, it’s been a heck of a ride and super rewarding seeing the improvements in my programming skills.</p>
                 <p>
                     
                     <button class="btn button" type="button" data-toggle="collapse" data-target="#collapseArticle1" aria-expanded="false" aria-controls="collapseArticle1">
@@ -159,7 +169,7 @@ animation-delay: 0.5s;
                 <h5>February 2, 2019</h5>
                 <img src="images/Marathon.jpeg" class="img-fluid" style="width:50%"></img>
                 </a>
-                <p class=".lead" style="margin-top:25px">It’s been quite a journey, since I started my Full Stack Web Development apprenticeship through Bloc with zero programming experience. I have made lots of research prior to entering this field and it became evident to me that programming is really for people who have the stamina and patience to sit down and simply just learn.</p>
+                <p style="margin-top:25px">It’s been quite a journey, since I started my Full Stack Web Development apprenticeship through Bloc with zero programming experience. I have made lots of research prior to entering this field and it became evident to me that programming is really for people who have the stamina and patience to sit down and simply just learn.</p>
                 <p>
                 <button class="btn button" type="button" data-toggle="collapse" data-target="#collapseArticle2" aria-expanded="false" aria-controls="collapseArticle2">
                       Continue Reading
@@ -190,7 +200,7 @@ animation-delay: 0.5s;
                   <h5>December 6, 2018</h5>
                   <img src="images/React.png" class="img-fluid" style="width:50%"></img>
                   </a>
-                  <p class=".lead" style="margin-top:25px">It has been a while since I have posted my last story, but the past 2 months have been wild. Lots of this.props, this.state, debugging, sweat and long nights. Just to recap quickly, I started with zero knowledge when it comes to programming and within 5–10 weeks into Bloc’s Full Stack Web Development Program, I was able to create a music player app and a chat app. It felt super rewarding implementing the skills I learned to create real applications.</p>
+                  <p style="margin-top:25px">It has been a while since I have posted my last story, but the past 2 months have been wild. Lots of this.props, this.state, debugging, sweat and long nights. Just to recap quickly, I started with zero knowledge when it comes to programming and within 5–10 weeks into Bloc’s Full Stack Web Development Program, I was able to create a music player app and a chat app. It felt super rewarding implementing the skills I learned to create real applications.</p>
                   <p>
                   <button class="btn button" type="button" data-toggle="collapse" data-target="#collapseArticle3" aria-expanded="false" aria-controls="collapseArticle3">
                       Continue Reading
@@ -249,19 +259,23 @@ animation-delay: 0.5s;
                 <h3>All Blogs</h3>
                 <a href = "/Blogs"><button type="button" class="button btn">Blogs History</button></a>
 
-              </div>
-            </div>
-          </div>
-          </section>
+             
+        
+        
+        </section>
+      </div>
+    </div>
+  </div>
         
 
       </main>
 
       
-    
+      
       <footer>
       <% include ./partials/footer.ejs %>
       </footer>
+    
       
 
       <% include ./partials/baseScripts.ejs %>

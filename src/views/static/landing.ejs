@@ -18,6 +18,19 @@ animation-delay: 0.5s;
 animation-duration: 2s;
 animation-delay: 0.5s;
 }
+
+ 
+
+
+
+
+        
+        
+        .content {
+          
+          padding: 10px;
+          }
+
   </style>
 
   
@@ -69,203 +82,81 @@ animation-delay: 0.5s;
 
             
             <section style="text-align: center;" id="greeting" class= jumbotron my-1>
-              <h3 class="animated slideInRight"  style = "font-family: myriad; color: #c71585"> Hello there! I am Navid Mashinchi a California based Full Stack Web Developer.</h3> 
+              <h3 class="animated slideInRight animated fadeIn"  style = "font-family: myriad; color: #c71585"> Hello there! I am Navid Mashinchi a California based Full Stack Web Developer.</h3> 
             </section>
          
     
             
-            <br>
             
 
-            
-          <div class="row">
-            <div class="leftcolumn">
-              <div class="card animated fadeIn">
-                <h2>Server Side JS with Node.JS </h2>
-                <h5>June 3, 2019</h5>
-                <img src="images/nodejs.png" class="img-fluid" style="width:50%"></img>
-                </a>
-                <p style="margin-top:25px">It’s been about a couple months since I posted my last story, but there is a reason why I didn’t get a chance to post any updates on my journey in the world of programming. Let me tell you one thing, it’s been a heck of a ride and super rewarding seeing the improvements in my programming skills.</p>
-                <p>
-                    
-                    <button class="btn button" type="button" data-toggle="collapse" data-target="#collapseArticle1" aria-expanded="false" aria-controls="collapseArticle1">
-                      Continue Reading
-                    </button>
-                  </p>
-                  <div class="collapse" id="collapseArticle1">
-                    <div class="card card-body">
-
-                        <p>Module 4 of Bloc’s apprenticeship has definitely been the most challenging module, but at the same time it’s been one of the most enjoyable modules that I have worked on. The reason for that is, because I got to use all my skills to finally create multiple applications from scratch on my own. I got introduced to a very popular server side platform called Node.JS.</p>
-                        <img src="images/Node.JS.jpeg"style="width:50%">
-                        <br>
-                        <p>Node.JS is one of the most popular technologies used by leading businesses such as Uber, Airbnb, Netflix and many more. To those who don’t know what Node.JS is, it allows you to create fast and scalable network applications, by using only one single programming language for both the front-end and back-end side. Sounds convenient right? The whole idea of relying on one single programming language, JavaScript, rather then using a different language for writing server-side code is called “Isomorphic JavaScript”. If you are new to Node.JS, I highly recommend reading the following article to learn more about 
-                        <a href="https://medium.com/airbnb-engineering/isomorphic-javascript-the-future-of-web-apps-10882b7a2ebc"target="_blank">Isomorphic Javascript.</a></p>
-                        
-                        <p>
-                            Module 4 started with the introduction to Node.JS and its core libraries. Learning about the standard, built in libraries such as
-                            <a href="https://nodejs.org/docs/latest-v8.x/api/fs.html"target="_blank">"fs"</a> which stands for file stystem,
-                            <a href="https://nodejs.org/docs/latest-v8.x/api/http.html" target="_blank">"HTTP"</a> and 
-                            <a href="https://nodejs.org/docs/latest-v8.x/api/modules.html"target="_blank">"Node Modules"</a>
-                            was a good way to start learning and grasp the fundamental understanding of how Node.JS’s environment works. Following the introduction, I started implementing the skills that I have learned into real life projects.</p>
-                        
-                        <p>The first project that I worked on is called “Address Bloc”. It’s a command line application that uses the
-                            <a href="https://github.com/SBoudrias/Inquirer.js/"target="_blank">"Inquirer"</a> module. The application is an address book that will allow users to store and retrieve contacts. When building this app I got introduced to a number of important concepts and learned some new features that are very powerful. First I learned about “Testing”, which is in todays job market a very demanding skill to have. There are a number of testing patterns, but the once I learned are “Test Driven Development” and “Behavioral Driven Development.” I am not going to get into the details of what they are about, but in short “Test Driven Development” (TDD) tests the implementation of your code, where though “Behavioral Driven Development” (BDD) is an extension of TDD and not only focuses on the implementation of your code but also on the behavior of it. Throughout the Module I used the testing framework
-                            <a href="https://jasmine.github.io/"target="_blank">"Jasmine"</a> , which is very popular and easy to understand.
-                        </p> 
-                        <br>
-                        <img src="images/jasmine.png" style="width:50%">
-                        <br>
-                        <p>Another important concept that I learned is “Object Relational Mapping” (ORM). I know when reading those terms for the first time it may sound super complicated, but to be honest if you spend a little time on them and do your research they become easy to understand. ORM allows you to create SQL queries, by allowing the developer to use the language of their choice. Instead of writing queries manually through your database, you can simply code queries, which is a big benefit. The only downsides of ORM are that they are slow in processing queries and that it’s hard to implement complex queries. I used
-                            <a href="http://docs.sequelizejs.com/"target="_blank">"Sequelize"</a> 
-                            in my projects. It’s a promise base ORM, which allows you to create models, association between models, migrations and SQL Queries.    
-                        </p>
-                        <p>In order to store the contacts in my Address-Bloc project, I used PostgreSQL for my database and as mentioned above Sequelize for my ORM. To connect the database and your ORM you simply use a package called “pg” which helps you handle the connection to the database and Sequelize.
-                        
-                        Overall I must say learning about ORM and Testing really takes your programming to another level. If you would like to check out the command line project just check it out on my GitHub. See the link below:
-                            <a href="https://github.com/navido89/address-bloc"target="_blank">"Addres-Bloc-GitHub".</a> 
-                          </p>
-                          <br>
-                          <img src="images/address-bloc.png">
-                          <br>
-                          <p>The second project that I worked on in Module 4 is called Bloccit. This project is a reddit inspired web app that has been built with Node.JS, Express, PostgreSQL, Jasmine and Embedded JavaScript. This app allows users to create topics, posts, and comments as well as vote and favorite posts.</p>
-                          <p>
-                            <a href="https://expressjs.com/"target="_blank">"Express"</a> 
-                            is another key learning objective of this module. It’s a very popular Node.JS framework that provides developers an API, build handlers for requests, plugin middleware such as view engine and many more features. Middleware is a key concept of express. It allows developers to add functionalities such as verification, authentication and many more features to their apps. Instead of rewriting the code for each feature, middleware can be simply required to your app. However the only downside of it is, that express doesn’t take care of the maintenance of the additional dependencies. 
-                          
-                          <a href="https://github.com/mde/ejs"target="_blank">"Embedded JavaScript (EJS)"</a> 
-                            is a view engine middleware that creates HTML templates for the users to view on their browser.
-                          </p>
-                          <p>
-                              This project took me a lot of time, because I started a full stack web application for the first time from scratch. It was a great learning experience and seeing the outcome of this project gave me a lot of motivation and improved my programming skills tremendously. Check out the link below or click on the picture, which takes you to the GitHub repo or to the application directly.
-                              <a href="https://github.com/navido89/bloccitBlo"target="_blank">"Bloccit-GitHub-Link."</a> 
+            <div class = "jumbotron animated fadeIn">  
+                <div class="container">
+                      <div class="row">
+                          <div class="col-md-6 how-img">
+                            <img src= "images/About.JPEG" class= "float-left img-fluid" style="height:680px; width:440px;" alt="About Picture">              
+                          </div>
+                          <div class="col-md-6" style="margin-top:10px">
+                            
+                            <p> I am Navid Mashinchi a Full Stack Web Developer based in Sacramento, California. I have been a developer for more then a year and have been loving every second of it. I am a highly motivated individual who always loves to learn new technologies and solve problems. I focus on creating responsive web applications supported by Test Driven Development, writing effective, and maintainable code. I am experienced in JavaScript frameworks, including Node.JS and React. </p>
+                      
+                            <p>I played soccer professionally for a number of years in countries such as Germany and Canada. Following my soccer career, I attended and graduated from the University of British Columbia. While I was finishing my last year in University, I joined the Vancouver Whitecaps FC (Major League Soccer) as a performance analyst and scout.  Throughout my time with the Whitecaps, I developed a strong passion for learning new technologies. As a result, I decided to shift into the Software & Tech industry. My love for coding, creating simple, yet useful websites, and my willingness to help other people have shaped me as a person and help me reach my career goals. </p>
+                            
+                            <p>I am fluent in Farsi, German and English. While I am not working on any projects, I spend time with my family, in the gym, play soccer or learn new technologies. I truly believe that there is nothing more beautiful in life than learning new skills and reinventing yourself to become better as every day passes. </p>
+                            
+                            <p>If you would like to learn more about me, feel free to have a look at  <a href= "navid.mashinchi-resume.pdf" target="_blank">my resume.</button></a>   
+                              
+                               
                             </p>
-                          <a href="https://navido89-bloccit.herokuapp.com/"><img src="images/Bloccit-Blog.png"></a>
-                          <br>
-                          <p>Last but not least, the last project that I worked on in Module 4 is called Blocipedia. It allows users to create, collaborate, and share wikis. It was built with Node.JS, Express, PostgreSQL, Jasmine, SendGrid and Stripe. I have enjoyed this project a lot, because of the incorporation of two APIs. 
-                              <a href="https://github.com/sendgrid/sendgrid-nodejs"target="_blank">"SendGrid"</a>
-                              is an API that allows developers to create user confirmation emails. 
-                              <a href="https://stripe.com/"target="_blank">"Stripe"</a>
-                              on the other hand, is an API that allows developers to implement a payment process. Working with these APIs and learning on how to incorporate them into my code was a very valuable learning experience.
-                          </p>
-                          <img src="images/sendgridandstripe.jpeg" style="width:50%">
-                          <br>
-                          <p>If you are interested in checking out this app have a look at my GitHub link below or check out the app directly.
-                              <a href="https://github.com/navido89/blocipedia-node"target="_blank">"Blocipedia-GitHub-Link."</a> 
-                          </p>
-                          <a href="https://navido89-bloccit.herokuapp.com/"><img src="images/blocipedia-blog.png"></a>
-                          <br>
-                          <p>Last but not least the grand finale of Module 4 was the last assessment that I would have to take in order to advance to the last module of Bloc’s Full Stack Web Developer program. I passed the assessment and I am super excited to finally start my capstone project and finish the apprenticeship. These last couple months have been an eye opener in terms of how much my programming skills have improved. I started programming about 8 months ago with zero programming knowledge and looking at what I have learned in such a short period of time really justifies that entering this program was a great decision. Everyone can learn coding and if you put in the time and work hard you will see the reward down the road. As mentioned in my last story, always remember:</p>
-                          <h1>It’s a marathon && !== a sprint ;)
-                          </h1>
-                          <p> Until then happy coding :)</p>
-                        </p>
-                     </div>
-                    
+          
+                          </div>
+                      </div>
                   </div>
-
-              </div>
-              <div class="card animated fadeIn">
-                <h2>It’s A Marathon & Not A Sprint</h2>
-                <h5>February 2, 2019</h5>
-                <img src="images/Marathon.jpeg" class="img-fluid" style="width:50%"></img>
-                </a>
-                <p style="margin-top:25px">It’s been quite a journey, since I started my Full Stack Web Development apprenticeship through Bloc with zero programming experience. I have made lots of research prior to entering this field and it became evident to me that programming is really for people who have the stamina and patience to sit down and simply just learn.</p>
-                <p>
-                <button class="btn button" type="button" data-toggle="collapse" data-target="#collapseArticle2" aria-expanded="false" aria-controls="collapseArticle2">
-                      Continue Reading
-                </button>
-                  </p>
-                <div class="collapse" id="collapseArticle2">
-                <div class="card card-body">
-                <p> <strong>It really is as my title states: “A Marathon Rather Than A Sprint”.</strong> I am amazed how much I have learned throughout the past couple months.</p>
-                <p>Just to recap quickly, the program started off teaching HTML, CSS and then JavaScript. This was all in Module 1, which followed by the introduction of React in Module 2. The best part about this journey is that you implement the skills you learned in projects that allows you to build your portfolio. I think at the end of the day, the key out of any institution that you graduate from is to learn the skills that helps you down the road to implement in your career. With Bloc you really do learn, <strong>if you have the stamina for it!</strong></p>
-                <p>Following Module 2, I got the first tastes of Data Structures, Algorithms and SQL. My Front-End studies came to the end and I got introduced to the Back-End side of programming. I got told that the Back-End side of programming is scarier and much more challenging. Turns out that I enjoyed the Back-End side much more then Front-End. I just enjoy dealing with different sort of Algorithms and Data Structures.</p>
-                <p>First, I learned about Pseudocode and the importance of clean coding. Pseudo code is just an informal language that engineers use to express what their codes should do in simple sentences. After that I learned about the importance of clean coding. There are a number of principles such as the “Extract Method”, “Self-Documenting Code” and etc… that gives you a very good understanding of how you should code in the working environment. Clean code just makes you a better developer and helps you when you are working on complex applications in a team environment, where other developers work with you on the code. The cleaner your code is, the easier it is to understand and maintain it.</p>
-                <img src="images/clean-code.jpeg" class="img-fluid"></img>
-                <p>Following the introduction of Pseudo Code and Clean Coding, I entered the world of data structures. My first and initial reaction was how on earth will I ever remember to write any of those codes? I learned about Stacks,Queues, LinkedLists, Hash Tables, Arrays and Binary Trees in depth. This is where it, became clear to me that this whole process is really a marathon and that it takes time to grasp and fully understand the concepts and the code of the above mentioned data structures.</p>
-                <p>I was quite amazed how powerful these data structures are and how helpful they could be when you deal with a big amount of data set. Each one of them has its own advantages and disadvantages. I am not going to talk through them in this article, but if you want to learn more on that, check out this article. It is a great summery on the pros and cons of various data structures.                 <a href="https://medium.com/omarelgabrys-blog/data-structures-a-quick-comparison-6689d725b3b0"target="_blank">"Data Structures - A Quick Comparison (Part 2)"</a> 
-                </p>
-                <p>Next, it was time to learn about algorithms. The word algorithm sounded scary to me initially, but it wasn’t as bad as I though. I learned about time complexity, which is an important concept to understand when you want to assess the performance of the algorithm you use. I learned the big O notation concept, which was confusing at the beginning but after a quick algebra refresher it all made sense. After time complexity, I learned about recursions, different sorting and searching methods. <strong>Again it was a marathon to fully understand the codes for the various algorithms.</strong></p>
-                <img src="images/algo.png" class="img-fluid"></img>
-                <p>Last but not least I learned about Databases and SQL in Module 3. I used PostgreSQL when learning how to write query statements and also liked the joint statement part, which I could see is a very beneficial skill to have in the future.</p>
-                <p>Like any other module in this program I had to write my assessment at the end. The assessment checks whether you have mastered the topics or not. The format is like a real technical interview, which is a good experience for the future. Like anything else in life, nothing is easy and you have to put in the work at the end of the day. I have learned throughout my professional experiences in soccer that talent isn’t just enough and that work ethic will always beat talent. I am grateful that I have developed that mindset in me thanks to my past. I am glad that I can implement it into programming as well and can definitely say that work ethic is definitely needed, if you want to learn to code .The next module will be on server side programming, which teaches how to use Node.JS for back-end programming.</p>
-                <p>Until then happy coding everyone :) </p>
-                </div>
-                
-                </div>
-                </div>
-              
-                <div class="card animated fadeIn">
-                  <h2>My React Journey</h2>
-                  <h5>December 6, 2018</h5>
-                  <img src="images/React.png" class="img-fluid" style="width:50%"></img>
-                  </a>
-                  <p style="margin-top:25px">It has been a while since I have posted my last story, but the past 2 months have been wild. Lots of this.props, this.state, debugging, sweat and long nights. Just to recap quickly, I started with zero knowledge when it comes to programming and within 5–10 weeks into Bloc’s Full Stack Web Development Program, I was able to create a music player app and a chat app. It felt super rewarding implementing the skills I learned to create real applications.</p>
-                  <p>
-                  <button class="btn button" type="button" data-toggle="collapse" data-target="#collapseArticle3" aria-expanded="false" aria-controls="collapseArticle3">
-                      Continue Reading
-                </button>
-                </p>
-                <div class="collapse" id="collapseArticle3">
-                  <div class="card card-body">
-                  <p>Following my first assessment I started working on Module 2. It became clear to me after a few assignments that the 2nd Module will be much more challenging than the Programming Fundamentals module. Module two started with the introduction of React and why we use it. It was interesting to learn about all the different frameworks and libraries.</p>
-                  <img src="images/rva.jpeg" class="img-fluid"></img>
-                  <br>
-                  <p>Comparing Angular, React and Vue gave me a better understanding of what is out there in the industry. Each one of them has it’s pros and cons. It became evident very quickly when making research on both React and Angular that they are the most used in todays world. Mastering one of them is good, but I am sure that becoming an expert in both of them would definitely be a big asset to have. I will definitely have Angular on my list to learn for the future. I am not going to discuss the pros and cons of the above mentioned libraries and frameworks in this story. There are enough stories out there that will give you a good overview. However if you are interested in learning more about React, Angular and Vue check out this article. It really helped me out to grasp the differences.
-                      <a href="https://medium.com/@TechMagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d"target="_blank">"Article-Link."</a> 
-                  </p>
-                  <p>
-                      The first project that I worked on in Module 2 was Bloc-Jams-React. This app gave me the first taste of what it means to use a library such as React and create a SPA(single page application). You could quickly see that React’s virtual DOM helps the front end side to perform in a fast manner. I obviously ran into problems, but the support staff through Slack and my mentor really helped out when I was stuck. If you are interested in checking out my project, have a look here:
-                  </p>
-                  <img src="images/Jam-NM.jpg" class="img-fluid"></img>
-                  <br>
-                  <p>Following Bloc-Jams-React app I worked on my second project. The second project was Bloc-Chat-React which was also my first encounter with Firebase.</p>
-                  <img src="images/Firebase.png" class="img-fluid" style="width:50%"></img>
-                  <br>
-                  <p>Firebase is a Backend as a Service provided by google. I had to learn implementing firebase, because of it’s google authentication and data storage service. This project was much more challenging than the first one, because the checkpoint had barley any code examples. So it was mostly on me to make my own research and learn how firebase works. I haven’t finished the design of the project yet, but I will post it in my future stories.</p>
-                  <p>After the two projects it was time to demonstrate my skills and knowledge in my second assessment. I prepared for a week and the second assessment required you to have a deeper understanding of Javascript, CSS3 and HTML. It also covered a few questions about React. It was nerve recking, but I passed the assessment and it felt awesome. I have learned so much in a short period of time and I can’t wait to see what’s next in Module 3. It will definitely not become easier, but I am looking very forward to learn more about Data Structures, Algorithms, Databases and SQL in the next Module.</p>
-                  <p>Overall my experience has been super positive with Bloc. I have made some great process over a short period of time and can’t wait to see where this journey is going to take me. I will stop here for now and will try to post an update again in the near future. Until then happy hacking everyone!!!</p>
-
-                  </div>
-                </div>  
-
-                </div>
             </div>
-            <div class="rightcolumn">
-              <div class="card animated fadeIn">
-                <h2>About Me</h2>
-                <img src="images/About.JPEG" class="img-fluid"></img>
-                <p style="margin-top:25px"> Welcome to my portfolio. I am a California based Full Stack Developer...</p>
-                <a href = "/about"><button type="button" class="button btn">Learn More About Me</button></a>
-              </div>
-              <div class="card animated fadeIn">
-                <h3>Recent Work</h3>
-                <a href = "https://navido89-locus-health-centre.herokuapp.com/" target="_blank">
-                  <img src="images/locus-project.png" class="img-fluid"></img>
-                </a>
-                <hr>
-                <a href = "https://navido89-blocipedia-node.herokuapp.com/" target="_blank">
-                  <img src="images/Blocipedia.jpg" class="img-fluid"></img>
-                </a>
-                <hr>
-                <br>
-                <a href = "https://navido89-bloccit.herokuapp.com/" target="_blank">
-                  <img src="images/Bloccit.jpg" class="img-fluid"></img>
-                </a>
-                
-                <br>
-              </div>
-              <div class="card animated fadeIn">
-                <h3>Blog</h3>
-                <a href = "/Blog"><button type="button" class="button btn"> Check out my library </button></a>
 
-             
-        
-        
-        </section>
-      </div>
-    </div>
-  </div>
+            <section class="row text-center jumbotron animated fadeIn">
+              <div class="container">
+                <h3 style="padding:10px;text-align:center">Latest Projects</h3>
+                    <div class="row">
+                            <div class="col-xs-4 col-sm-12 col-md-4 col-lg-4">
+                              <div class="content">
+                                <div class = "news-image"> 
+                                  <a href=""><img src="images/locus-project1.PNG" class="thumbnail img-fluid" alt="News One" style="width:100%" class="image"></a>
+                                  <a href="https://navido89-locus-health-centre.herokuapp.com/" target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">See Locus Health Live</button></a>
+                                  <br>
+                                  <a href= "https://github.com/navido89/Locus-Health-Center" target="_blank"style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">GitHub Link</button></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-xs-4 col-sm-12 col-md-4 col-lg-4">
+                              <div class="content">
+                                  <div class = "news-image">
+                                     <a href=""><img src="images/Blocipedia1.png" class="thumbnail img-fluid" alt="News Two" style="width:100%" class = "image"></a>
+                                     <a href="https://navido89-blocipedia-node.herokuapp.com/"  target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center button2">See Blocipedia Live</button></a>
+                                    <br>
+                                     <a href="https://github.com/navido89/blocipedia-node" target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center button2">GitHub Link</button></a>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-sm-12 col-md-4 col-lg-4">
+                                    <div class="content">
+                                        <div class = "news-image">
+                                           <a href=""><img src="images/Bloccit1.png" class="thumbnail img-fluid" alt="News Three" style="width:100%" class = "image"></a>
+                                           <a href="https://navido89-bloccit.herokuapp.com/" target="_blank"style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">See Bloccit Live</button></a>
+                                           <br>
+                                           <a href= "https://github.com/navido89/bloccit" target="_blank"style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">GitHub Link</button></Link></a>
+                                        </div>
+                                      </div>
+                                  </div>
+              </div>
+            </section>
+
+            
+
+                  
+            
+
+            
+      
         
 
       </main>

@@ -44,58 +44,41 @@ animation-delay: 0.5s;
       <div class="mainpage">
           <% include ./partials/navbarLanding.ejs %>
 
-          <section style= "text-align:center" class="">
-              <div class="container animated fadeIn">
+          <section style= "text-align:center" class="jumbotron bg-transparent animated fadeIn">
+              <div class="container">
+             
+              <img src="images/Head-Shot-3.jpg" class = "rounded-circle mx-auto d-block landingPic img-fluid" alt="Navid Mashinchi Head-Shot" style="margin-top:15%">
               
-              <div>
-                
-              <img src="images/Head-Shot-2.jpg" class = "rounded-circle mx-auto d-block landingPic" alt="Navid Mashinchi Head-Shot" style="height:150px; width:150px; margin-top:100px">
-              
-                <h1 style="color:black; margin-top:15px">NAVID MASHINCHI</h1>
-                <h4 style= "color: #c71585"> FULL STACK DEVELOPER </h4>
+                <h1 style="color:black; margin-top:10px;">NAVID MASHINCHI</h1>
+                <h2 style= "color: #c71585";> FULL STACK DEVELOPER </h2>
+                <a href="#greeting" style="text-align:center;"><i class="fas fa-chevron-circle-down button1"></i></a>
+            </div>
+          </section>
+      </div>        
+    
 
-    
-    
-                <hr>
-                
-                <a href= "https://github.com/navido89"><i class ="fab fa-github" style= "font-size: 50px; color: black"></i></a>
-                <a href= "https://linkedin.com/in/navidmashinchi"><i class ="fab fa-linkedin" style= "font-size: 50px;"></i></a>
-                <a href= "https://www.instagram.com/navido_ma/"><i class ="fab fa-instagram fa-5x" style= "font-size: 50px;"></i></a>            
-                <a href= "https://twitter.com/NMashinchi"><i class ="fab fa-twitter" style= "font-size: 50px; color: twitter"></i></a>
-                <a href= "navid.mashinchi-resume.pdf" target="_blank"><i class="fas fa-file" style= "font-size: 50px; color: black"></i></ion-icon></a>
-    
-              </div>
-              
-                <hr>
-                <h1 style="color:black; margin-top:15px">Portfolio</h1>
-
-                <p>
-                    <a href="#greeting" style="text-align:center; "><i class="fas fa-chevron-circle-down button1"></i></a>
-    
-                </p>
-    
-            </section>
 
             
-    </div>        
-    
-
-            
-            <section style="text-align: center;" id="greeting" class= jumbotron my-1>
+            <section class= "jumbotron my-1" style="text-align: center; background-color: #f9f9f9" id="greeting">
+              <div class="container">
               <h3 class="animated slideInRight animated fadeIn"  style = "font-family: myriad; color: #c71585">"Never let success go to your head and never let failure go to your heart" -Ziad K.Abdelnour</h3> 
+              </div>
             </section>
+
+            <hr class="animated fadeIn" style = "background-color:#c71585">
+
          
     
             
             
 
-            <div class = "jumbotron animated fadeIn">  
+            <div class = "jumbotron animated fadeIn" style="background-color: #f9f9f9">  
                 <div class="container">
                       <div class="row">
                           <div class="col-md-6 how-img">
-                            <img src= "images/About.JPEG" class= "float-left img-fluid" style="height:680px; width:440px;" alt="About Picture">              
+                            <img src= "images/About1.JPEG" class= "float-left img-fluid" alt="About Picture">              
                           </div>
-                          <div class="col-md-6" style="margin-top:10px">
+                          <div class="col-md-6" style="margin-top:0px;">
                             
                             <p> I am Navid Mashinchi a Full Stack Web Developer based in Sacramento, California. I have been a developer for more then a year and have been loving every second of it. I am a highly motivated individual who always loves to learn new technologies and solve problems. I focus on creating responsive web applications supported by Test Driven Development, writing effective, and maintainable code. I am experienced in JavaScript frameworks, including Node.JS and React. </p>
                       
@@ -103,24 +86,31 @@ animation-delay: 0.5s;
                             
                             <p>I am fluent in Farsi, German and English. While I am not working on any projects, I spend time with my family, in the gym, play soccer or learn new technologies. I truly believe that there is nothing more beautiful in life than learning new skills and reinventing yourself to become better as every day passes. </p>
                             
-                            <p>If you would like to learn more about me, feel free to have a look at  <a href= "navid.mashinchi-resume.pdf" target="_blank">my resume.</button></a>   
+                            <p>If you would like to learn more about me, feel free to have a look at my resume.  </p>
+                            
+                            <a href= "navid.mashinchi-resume.pdf" target="_blank"style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">My Resume</button></a>
+
                               
                                
-                            </p>
+                            
           
                           </div>
                       </div>
                   </div>
             </div>
 
-            <section class="row text-center jumbotron animated fadeIn">
+            <hr class="animated fadeIn" style = "background-color:#c71585">
+
+            <section class="row text-center jumbotron animated fadeIn" style="background-color: #f9f9f9">
               <div class="container">
                 <h3 style="padding:10px;text-align:center">Latest Projects</h3>
                     <div class="row">
                             <div class="col-xs-4 col-sm-12 col-md-4 col-lg-4">
                               <div class="content">
                                 <div class = "news-image"> 
-                                  <a href=""><img src="images/locus-project1.PNG" class="thumbnail img-fluid" alt="News One" style="width:100%" class="image"></a>
+                                  <a href=""><img src="images/locus-project1.PNG" class="thumbnail img-fluid" alt="News One" class="image"></a>
+                                  <br>
+                                  <br>
                                   <a href="https://navido89-locus-health-centre.herokuapp.com/" target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">See Locus Health Live</button></a>
                                   <br>
                                   <a href= "https://github.com/navido89/Locus-Health-Center" target="_blank"style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">GitHub Link</button></a>
@@ -130,7 +120,9 @@ animation-delay: 0.5s;
                             <div class="col-xs-4 col-sm-12 col-md-4 col-lg-4">
                               <div class="content">
                                   <div class = "news-image">
-                                     <a href=""><img src="images/Blocipedia1.png" class="thumbnail img-fluid" alt="News Two" style="width:100%" class = "image"></a>
+                                     <a href=""><img src="images/Blocipedia1.png" class="thumbnail img-fluid" alt="News Two" class = "image"></a>
+                                     <br>
+                                     <br>
                                      <a href="https://navido89-blocipedia-node.herokuapp.com/"  target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center button2">See Blocipedia Live</button></a>
                                     <br>
                                      <a href="https://github.com/navido89/blocipedia-node" target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center button2">GitHub Link</button></a>
@@ -140,7 +132,9 @@ animation-delay: 0.5s;
                             <div class="col-xs-4 col-sm-12 col-md-4 col-lg-4">
                                     <div class="content">
                                         <div class = "news-image">
-                                           <a href=""><img src="images/Bloccit1.png" class="thumbnail img-fluid" alt="News Three" style="width:100%" class = "image"></a>
+                                           <a href=""><img src="images/Bloccit1.png" class="thumbnail img-fluid" alt="News Three" class = "image"></a>
+                                           <br>
+                                           <br>
                                            <a href="https://navido89-bloccit.herokuapp.com/" target="_blank"style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">See Bloccit Live</button></a>
                                            <br>
                                            <a href= "https://github.com/navido89/bloccit" target="_blank"style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">GitHub Link</button></Link></a>

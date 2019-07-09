@@ -84,7 +84,7 @@ body {
   }
 }
 
-.button{
+.button1{
   background-color: #c71585;
   border: 2px solid white;
   color: white;
@@ -98,9 +98,9 @@ body {
   border-color: white;
 }
 
-.button:hover{
+.button1:hover{
   
-box-shadow: 0px 0px 10px 5px #c71585;
+  background-color: #991066;
 
 }
 
@@ -109,24 +109,6 @@ box-shadow: 0px 0px 10px 5px #c71585;
   border: 2px solid  #c71585;
 }
 
-.button{
-    background-color: #c71585;
-    border: 2px solid white;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 2px 1px;
-    border-radius: 12px;
-    border-color: white;
-    }
-    
-    .button:hover{
-    
-    box-shadow: 0px 0px 10px 5px #c71585;
-    
-    }
+
 
    

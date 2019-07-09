@@ -213,8 +213,7 @@ border-color: white;
 }
 
 .button:hover{
-
-box-shadow: 0px 0px 10px 5px #c71585;
+  background-color: #991066;
 
 }
 
@@ -233,8 +232,7 @@ border-color: #c71585;
 }
 
 .button2:hover{
-
-box-shadow: 0px 0px 10px 5px white;
+  background-color: #E8E8E8	;
 
 }
 

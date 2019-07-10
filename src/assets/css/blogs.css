@@ -1,28 +1,5 @@
-.jumbotron1{
-    margin-top: 20px;
-    background-image: url("/images/Picture2.png");
-    background-size: cover;
-    color: white;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
-
-  }
-
- 
-
-
-.fab.fa-instagram {
-  color: transparent;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  background-clip: text;
-  -webkit-background-clip: text;
-}
-
 body {
-  padding: 0px;
+  
   font-family: avenir;
   background-color: 	#f9f9f9;
   
@@ -40,29 +17,6 @@ body {
 
 
 
-.fakeimg {
-  background-color: transparent;
-  width: 100%;
-  
-}
-
-.card {
-  padding: 20px;
-  margin-top: 20px;
-  animation-duration: 3s;
-  animation-delay: 0.5s;
-  background-color: white;
-  margin-left: auto;
-  margin-right: auto;
-  max-width:960px ;
-
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn { 
@@ -89,9 +43,4 @@ body {
   
   background-color: #991066;
 
-}
-
-.landingPic{
-  box-shadow: 0px 0px 10px 5px #c71585;
-  border: 2px solid  #c71585;
 }

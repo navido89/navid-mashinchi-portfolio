@@ -4,44 +4,35 @@
   <head>
     <% include ./partials/head.ejs %>
     <link rel="stylesheet" href="css/blogs.css">
+    <style>
+      .fadeIn {
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    }
+    
+    .slideInRight {
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    }
+      </style>
   </head>
 
-  <style>
-  .fadeIn {
-animation-duration: 3s;
-animation-delay: 0.5s;
-}
-
-.slideInRight {
-animation-duration: 2s;
-animation-delay: 0.5s;
-}
-  </style>
-
-  
-
-  
-  
   <body>
 
     <% include ./partials/navbar.ejs %>
 
       <main>
-          <p class="animated fadeIn"  style = "font-family: myriad; color: #c71585; font-size: 80px; text-align:center; text-decoration-line: underline ">Blog</p> 
+      <p class="animated fadeIn"  style = "font-family: myriad; color: #c71585; font-size: 80px; text-align:center; text-decoration-line: underline ">Blog</p> 
   
         
       <section class = "jumbotron" style= "background-color:#f9f9f9;">
 
           <div class="container-fluid">
-        
-          <div class="row">
-            
-
-                <div class="card animated fadeIn" style="background-color:#f9f9f9; border:none;">
+          <div class="card animated fadeIn" style="background-color:#f9f9f9; border:none;">
                   
                     <h2>Time To Give Back - Locus Health Centre Project Update</h2>
                     <h5>July 2, 2019</h5>
-                    <img src="images/locus-blog.png" class="img-fluid"></img>
+                    <img src="images/locus-blog.png" style="width:50%" class="img-fluid"></img>
                     </a>
                     <p style="margin-top:25px">So here we are. It’s not Christmas yet, but it was time for me to play the role of early Santa Claus and give back to the community. It’s been about a year I started programming and I am about to graduate from my full stack web development apprenticeship. So I thought to myself why not do something good for the community and give back something valuable for my final capstone project.</p>
                     <p>
@@ -72,20 +63,25 @@ animation-delay: 0.5s;
                     <p>Once the first sprint was completed, I presented my work to the owner of the clinic. A few adjustments in terms of picture selection and lay out were made. It was a great experience interacting with the owner back and forth on how he would like the final product to look like. Developing it and seeing him happy was a rewarding feeling. There are a few little details, that will be added and once the page will be launched I will make sure to announce it so you can check it out.</p>
                     <p>Until then happy coding :) </p>
                     </div>
-                    
                     </div>
-                    <hr class="animated fadeIn" style = "background-color:#c71585">
+                  </div>
+          </div>
+        </section>
 
-            </div>
+        <hr class="animated fadeIn" style = "background-color:#c71585;">
 
 
 
-              <div class="card animated fadeIn" style="background-color:#f9f9f9; border:none">
+        <section class = "jumbotron" style= "background-color:#f9f9f9;">
+
+            <div class="container-fluid">
+            <div class="card animated fadeIn" style="background-color:#f9f9f9; border:none;">
                 <h2>Server Side JS with Node.JS </h2>
                 <h5>June 3, 2019</h5>
-                <img src="images/nodejs.png" class="img-fluid"></img>
+                <img src="images/nodejs.png" style="width:50%" class="img-fluid"></img>
                 </a>
-                <p style="margin-top:25px">It’s been about a couple months since I posted my last story, but there is a reason why I didn’t get a chance to post any updates on my journey in the world of programming. Let me tell you one thing, it’s been a heck of a ride and super rewarding seeing the improvements in my programming skills.</p>
+                <p style="margin-top:25px">It’s been about a couple months since I posted my last story, but there is a reason why I didn’t get a chance to post any updates on my journey in the world of programming. Let me tell you one thing, it’s been a heck of a ride and super rewarding seeing the improvements in my programming skills.
+                Module 4 of Bloc’s apprenticeship has definitely been the most challenging module, but at the same time it’s been one of the most enjoyable modules that I have worked on. </p>
                 <p>
                     
                     <button class="btn button" type="button" data-toggle="collapse" data-target="#collapseArticle1" aria-expanded="false" aria-controls="collapseArticle1">
@@ -95,7 +91,7 @@ animation-delay: 0.5s;
                   <div class="collapse" id="collapseArticle1">
                     <div class="card card-body" style= "background-color:#f9f9f9; border:none">
 
-                        <p>Module 4 of Bloc’s apprenticeship has definitely been the most challenging module, but at the same time it’s been one of the most enjoyable modules that I have worked on. The reason for that is, because I got to use all my skills to finally create multiple applications from scratch on my own. I got introduced to a very popular server side platform called Node.JS.</p>
+                        <p>The reason for that is, because I got to use all my skills to finally create multiple applications from scratch on my own. I got introduced to a very popular server side platform called Node.JS.</p>
                         <img src="images/Node.JS.jpeg"style="width:50%">
                         <br>
                         <p>Node.JS is one of the most popular technologies used by leading businesses such as Uber, Airbnb, Netflix and many more. To those who don’t know what Node.JS is, it allows you to create fast and scalable network applications, by using only one single programming language for both the front-end and back-end side. Sounds convenient right? The whole idea of relying on one single programming language, JavaScript, rather then using a different language for writing server-side code is called “Isomorphic JavaScript”. If you are new to Node.JS, I highly recommend reading the following article to learn more about 
@@ -125,7 +121,7 @@ animation-delay: 0.5s;
                             <a href="https://github.com/navido89/address-bloc"target="_blank">"Addres-Bloc-GitHub".</a> 
                           </p>
                           <br>
-                          <img src="images/address-bloc.png">
+                          <img src="images/address-bloc.png" style="width:50%">
                           <br>
                           <p>The second project that I worked on in Module 4 is called OneTwoPass. This project is a reddit inspired web app that has been built with Node.JS, Express, PostgreSQL, Jasmine and Embedded JavaScript. This app allows users to create topics, posts, and comments as well as vote and favorite posts.</p>
                           <p>
@@ -159,20 +155,24 @@ animation-delay: 0.5s;
                           </h1>
                           <p> Until then happy coding :)</p>
                         </p>
-                     </div>
-
+                      </div>
+                    </div>
                   </div>
-                  <hr class="animated fadeIn" style = "background-color:#c71585">
+          </div>
+        </section>
 
-                </div>
-              
+        <hr class="animated fadeIn" style = "background-color:#c71585">
 
-              <div class="card animated fadeIn" style="background-color:#f9f9f9; border:none">
+        <section class = "jumbotron" style= "background-color:#f9f9f9;">
+
+            <div class="container-fluid">
+            <div class="card animated fadeIn" style="background-color:#f9f9f9; border:none;">     
                 <h2>It’s A Marathon & Not A Sprint</h2>
                 <h5>February 2, 2019</h5>
-                <img src="images/Marathon.jpeg" class="img-fluid" style="width:50%"></img>
+                <img src="images/Marathon.jpeg" style="width:50%" class="img-fluid" style="width:50%"></img>
                 </a>
-                <p style="margin-top:25px">It’s been quite a journey, since I started my Full Stack Web Development apprenticeship through Bloc with zero programming experience. I have made lots of research prior to entering this field and it became evident to me that programming is really for people who have the stamina and patience to sit down and simply just learn.</p>
+                <p style="margin-top:25px">It’s been quite a journey, since I started my Full Stack Web Development apprenticeship through Bloc with zero programming experience. I have made lots of research prior to entering this field and it became evident to me that programming is really for people who have the stamina and patience to sit down and simply just learn.
+                <strong>It really is as my title states: “A Marathon Rather Than A Sprint”.</strong> I am amazed how much I have learned throughout the past couple months.</p>
                 <p>
                 <button class="btn button" type="button" data-toggle="collapse" data-target="#collapseArticle2" aria-expanded="false" aria-controls="collapseArticle2">
                       Continue Reading
@@ -180,32 +180,35 @@ animation-delay: 0.5s;
                   </p>
                 <div class="collapse" id="collapseArticle2">
                 <div class="card card-body" style= "background-color:#f9f9f9; border:none">
-                <p> <strong>It really is as my title states: “A Marathon Rather Than A Sprint”.</strong> I am amazed how much I have learned throughout the past couple months.</p>
+                
                 <p>Just to recap quickly, the program started off teaching HTML, CSS and then JavaScript. This was all in Module 1, which followed by the introduction of React in Module 2. The best part about this journey is that you implement the skills you learned in projects that allows you to build your portfolio. I think at the end of the day, the key out of any institution that you graduate from is to learn the skills that helps you down the road to implement in your career. With Bloc you really do learn, <strong>if you have the stamina for it!</strong></p>
                 <p>Following Module 2, I got the first tastes of Data Structures, Algorithms and SQL. My Front-End studies came to the end and I got introduced to the Back-End side of programming. I got told that the Back-End side of programming is scarier and much more challenging. Turns out that I enjoyed the Back-End side much more then Front-End. I just enjoy dealing with different sort of Algorithms and Data Structures.</p>
                 <p>First, I learned about Pseudocode and the importance of clean coding. Pseudo code is just an informal language that engineers use to express what their codes should do in simple sentences. After that I learned about the importance of clean coding. There are a number of principles such as the “Extract Method”, “Self-Documenting Code” and etc… that gives you a very good understanding of how you should code in the working environment. Clean code just makes you a better developer and helps you when you are working on complex applications in a team environment, where other developers work with you on the code. The cleaner your code is, the easier it is to understand and maintain it.</p>
-                <img src="images/clean-code.jpeg" class="img-fluid"></img>
+                <img src="images/clean-code.jpeg" style="width:50%" class="img-fluid"></img>
                 <p>Following the introduction of Pseudo Code and Clean Coding, I entered the world of data structures. My first and initial reaction was how on earth will I ever remember to write any of those codes? I learned about Stacks,Queues, LinkedLists, Hash Tables, Arrays and Binary Trees in depth. This is where it, became clear to me that this whole process is really a marathon and that it takes time to grasp and fully understand the concepts and the code of the above mentioned data structures.</p>
                 <p>I was quite amazed how powerful these data structures are and how helpful they could be when you deal with a big amount of data set. Each one of them has its own advantages and disadvantages. I am not going to talk through them in this article, but if you want to learn more on that, check out this article. It is a great summery on the pros and cons of various data structures.                 <a href="https://medium.com/omarelgabrys-blog/data-structures-a-quick-comparison-6689d725b3b0"target="_blank">"Data Structures - A Quick Comparison (Part 2)"</a> 
                 </p>
                 <p>Next, it was time to learn about algorithms. The word algorithm sounded scary to me initially, but it wasn’t as bad as I though. I learned about time complexity, which is an important concept to understand when you want to assess the performance of the algorithm you use. I learned the big O notation concept, which was confusing at the beginning but after a quick algebra refresher it all made sense. After time complexity, I learned about recursions, different sorting and searching methods. <strong>Again it was a marathon to fully understand the codes for the various algorithms.</strong></p>
-                <img src="images/algo.png" class="img-fluid"></img>
+                <img src="images/algo.png" style="width:50%" class="img-fluid"></img>
                 <p>Last but not least I learned about Databases and SQL in Module 3. I used PostgreSQL when learning how to write query statements and also liked the joint statement part, which I could see is a very beneficial skill to have in the future.</p>
                 <p>Like any other module in this program I had to write my assessment at the end. The assessment checks whether you have mastered the topics or not. The format is like a real technical interview, which is a good experience for the future. Like anything else in life, nothing is easy and you have to put in the work at the end of the day. I have learned throughout my professional experiences in soccer that talent isn’t just enough and that work ethic will always beat talent. I am grateful that I have developed that mindset in me thanks to my past. I am glad that I can implement it into programming as well and can definitely say that work ethic is definitely needed, if you want to learn to code .The next module will be on server side programming, which teaches how to use Node.JS for back-end programming.</p>
                 <p>Until then happy coding everyone :) </p>
-                </div>
-                
-                </div>
-                <hr class="animated fadeIn" style = "background-color:#c71585">
+                   </div>
+                 </div>
+               </div>
+             </div>
+         </section>
 
-                </div>
+<hr class="animated fadeIn" style = "background-color:#c71585">
 
+<section class = "jumbotron" style= "background-color:#f9f9f9;">
 
+    <div class="container-fluid">
+    <div class="card animated fadeIn" style="background-color:#f9f9f9; border:none;">
               
-                <div class="card animated fadeIn" style="background-color:#f9f9f9; border:none">
                   <h2>My React Journey</h2>
                   <h5>December 6, 2018</h5>
-                  <img src="images/React.png" class="img-fluid" style="width:50%"></img>
+                  <img src="images/React.png" style="width:50%" class="img-fluid" style="width:50%"></img>
                   </a>
                   <p style="margin-top:25px">It has been a while since I have posted my last story, but the past 2 months have been wild. Lots of this.props, this.state, debugging, sweat and long nights. Just to recap quickly, I started with zero knowledge when it comes to programming and within 5–10 weeks into Bloc’s Full Stack Web Development Program, I was able to create a music player app and a chat app. It felt super rewarding implementing the skills I learned to create real applications.</p>
                   <p>
@@ -216,7 +219,7 @@ animation-delay: 0.5s;
                 <div class="collapse" id="collapseArticle3">
                   <div class="card card-body" style= "background-color:#f9f9f9; border:none">
                   <p>Following my first assessment I started working on Module 2. It became clear to me after a few assignments that the 2nd Module will be much more challenging than the Programming Fundamentals module. Module two started with the introduction of React and why we use it. It was interesting to learn about all the different frameworks and libraries.</p>
-                  <img src="images/rva.jpeg" class="img-fluid"></img>
+                  <img src="images/rva.jpeg" style="width:50%" class="img-fluid"></img>
                   <br>
                   <p>Comparing Angular, React and Vue gave me a better understanding of what is out there in the industry. Each one of them has it’s pros and cons. It became evident very quickly when making research on both React and Angular that they are the most used in todays world. Mastering one of them is good, but I am sure that becoming an expert in both of them would definitely be a big asset to have. I will definitely have Angular on my list to learn for the future. I am not going to discuss the pros and cons of the above mentioned libraries and frameworks in this story. There are enough stories out there that will give you a good overview. However if you are interested in learning more about React, Angular and Vue check out this article. It really helped me out to grasp the differences.
                       <a href="https://medium.com/@TechMagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d"target="_blank">"Article-Link."</a> 
@@ -224,7 +227,7 @@ animation-delay: 0.5s;
                   <p>
                       The first project that I worked on in Module 2 was Bloc-Jams-React. This app gave me the first taste of what it means to use a library such as React and create a SPA(single page application). You could quickly see that React’s virtual DOM helps the front end side to perform in a fast manner. I obviously ran into problems, but the support staff through Slack and my mentor really helped out when I was stuck. If you are interested in checking out my project, have a look here:
                   </p>
-                  <img src="images/Jam-NM.jpg" class="img-fluid"></img>
+                  <img src="images/Jam-NM.jpg" style="width:50%" class="img-fluid"></img>
                   <br>
                   <p>Following Bloc-Jams-React app I worked on my second project. The second project was Bloc-Chat-React which was also my first encounter with Firebase.</p>
                   <img src="images/Firebase.png" class="img-fluid" style="width:50%"></img>
@@ -232,19 +235,23 @@ animation-delay: 0.5s;
                   <p>Firebase is a Backend as a Service provided by google. I had to learn implementing firebase, because of it’s google authentication and data storage service. This project was much more challenging than the first one, because the checkpoint had barley any code examples. So it was mostly on me to make my own research and learn how firebase works. I haven’t finished the design of the project yet, but I will post it in my future stories.</p>
                   <p>After the two projects it was time to demonstrate my skills and knowledge in my second assessment. I prepared for a week and the second assessment required you to have a deeper understanding of Javascript, CSS3 and HTML. It also covered a few questions about React. It was nerve recking, but I passed the assessment and it felt awesome. I have learned so much in a short period of time and I can’t wait to see what’s next in Module 3. It will definitely not become easier, but I am looking very forward to learn more about Data Structures, Algorithms, Databases and SQL in the next Module.</p>
                   <p>Overall my experience has been super positive with Bloc. I have made some great process over a short period of time and can’t wait to see where this journey is going to take me. I will stop here for now and will try to post an update again in the near future. Until then happy hacking everyone!!!</p>
-
-                  </div>
-                </div>  
-                <hr class="animated fadeIn" style = "background-color:#c71585">
-
                 </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+<hr class="animated fadeIn" style = "background-color:#c71585">
+                 
+<section class = "jumbotron" style= "background-color:#f9f9f9;">
+
+    <div class="container-fluid">
+    <div class="card animated fadeIn" style="background-color:#f9f9f9; border:none;">
 
 
-
-                <div class="card animated fadeIn" style="background-color:#f9f9f9; border:none">
                         <h2>My first month at Bloc</h2>
                         <h5>September 24, 2018</h5>
-                        <img src="images/bloc.jpeg" class="img-fluid" style="width:50%"></img>
+                        <img src="images/bloc.jpeg" style="width:50%" class="img-fluid" style="width:50%"></img>
                         </a>
                         <p class=".lead" style="margin-top:25px">It’s been an interesting journey so far in my full stack web developer program through Bloc. I didn’t know what to expect, since I had no background at all when it comes to coding.</p>
                         <p>
@@ -260,19 +267,23 @@ animation-delay: 0.5s;
                         <br>
                         <p>At the end of each module there is an assessment, that allows you to prove that you have mastered the content in order to advance to the next module. The assessment contains explaining concepts, multiple choice questions, interpreting codes and writing codes. At the end of the assessment you will receive your grade. You have to receive a 7 out of 10 to pass and have 3 tries. If you don’t pass after the third try you will forfeit your Tuition Reimbursement Guarantee. So a lot is on the line ….I have studied a week to prepare myself for the assessment. Fortunately I passed and I am very excited to start the next module. I have to say I really enjoy the program. Your success is based on the amount of time you put in. I would have never thought I would learn so much in a short period of time. It’s very exciting and I can’t wait to implement my skills in the projects coming up.</p>
                         <p>I will stop here for now. I have my first meeting tomorrow with my new mentor and I am looking forward to learn more and more :)</p>
-      
-                        </div>
-                      </div>  
-                      <hr class="animated fadeIn" style = "background-color:#c71585">
-
+                      </div>
+                    </div>
+                  </div>
                 </div>
+      </section>
+      
+      <hr class="animated fadeIn" style = "background-color:#c71585">
+                        
 
+      <section class = "jumbotron" style= "background-color:#f9f9f9;">
 
+          <div class="container-fluid">
+          <div class="card animated fadeIn" style="background-color:#f9f9f9; border:none;">
 
-                <div class="card animated fadeIn" style="background-color:#f9f9f9; border:none">
                         <h2>How Bloc and I met.</h2>
                         <h5>September 14, 2018</h5>
-                        <img src="images/code1.jpg" class="img-fluid" style="width:50%"></img>
+                        <img src="images/code1.jpg" style="width:50%" class="img-fluid" style="width:50%"></img>
                         </a>
                         <p class=".lead" style="margin-top:25px">If someone would have told me that I will get into programming 10 years ago, I would have just laughed at that thought and take it as a joke. Me and computers? No chance….</p>
                         <p>
@@ -287,15 +298,13 @@ animation-delay: 0.5s;
                         <p>Upon graduation from University, I found my way back into the professional game. Not as a player but this time as an Analyst & Scout for a major league soccer team. I felt it was the right time to hang up the boots and use my strengths off the field. Throughout my years as an analyst, I was constantly working with various software and websites to do my job. This is the time, where I started to become more and more curious on how these software and web pages are actually build. I was hooked to my laptop as an analyst and started to develop a strong interest to the world of coding. I became fascinated to programming, so I decided to pursue my interest of coding.</p>
                         <p>Prior to attending Bloc, I discussed with various professionals within the industry which educational path would probably be the best fit for me. After tons of research, I committed to Bloc and I am looking forward to this journey.</p>
                         <p>I will stop right here for now…..In my next post I will talk about my first month at Bloc and how my life has been as a coder.</p>
-
-                        </div>
-                      </div>  
-      
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-           
-          </div>
-          </section>
+        </section>
+                        
+          
         
 
       </main>

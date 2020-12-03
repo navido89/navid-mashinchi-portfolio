@@ -1,6 +1,6 @@
 .mainpage{
     
-    background-image: url("/images/Picture1.png");
+    background-image: url("/images/Landing1.jpg");
     background-size:cover;
     color: white;
     -webkit-background-size: 100% 100%;
@@ -10,6 +10,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    opacity: 1.0;
     
   }
 
@@ -66,7 +67,7 @@ body {
   }
 
 .landingPic{
-  box-shadow: 0px 0px 10px 5px #c71585;
+  box-shadow: 0px 0px 10px 5px  #c71585;
   border: 2px solid  #c71585;
 }
 

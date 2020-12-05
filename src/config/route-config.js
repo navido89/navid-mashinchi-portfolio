@@ -5,11 +5,14 @@ module.exports = {
       const workRoutes = require("../routes/work");
       const contactRoutes = require("../routes/contact");
       const blogsRoutes = require("../routes/blogs");
+      const testimonialsRoutes = require("../routes/testimonials");
+
 
       app.use(blogsRoutes);
       app.use(contactRoutes);
       app.use(workRoutes);
       app.use(landingRoutes);
       app.use(skillsRoutes);
+      app.use(testimonialsRoutes);
     }
   }

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" style = "scroll-behavior: smooth">
+
+  <head>
+    <% include ./partials/head.ejs %>
+    <link rel="stylesheet" href="css/blogs.css">
+
+    <style>
+      .fadeIn {
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    }
+    
+    .slideInRight {
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    }
+ 
+.controls-top {
+  font-size: 100px;
+}
+
+.btn-floating {
+	color: #c71585 ;
+}
+
+.fas:hover{
+  color: #991066;
+  }
+
+
+    
+      </style>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <% include ./partials/navbar.ejs %>
+
+      <main>
+        <p class="animated fadeIn"  style = "font-family: myriad; color: #c71585; font-size: 80px; text-align:center;">Testimonials</p> 
+
+<section class="text-center my-5">
+  
+
+  <div class="wrapper-carousel-fix">
+    <!-- Carousel Wrapper -->
+    <div id="multi-item-example" class="carousel testimonial-carousel slide carousel-multi-item mb-5" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls-top">
+        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-circle-left fa-xs" ></i></a>
+        <a class="btn-floating light-blue darken-4" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-circle-right fa-xs" ></i></a>
+      </div>
+     
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+        <!--First slide-->
+        <div class="carousel-item active">
+          <div class="testimonial">
+            <!--Avatar-->
+            <div class="avatar mx-auto mb-4">
+              <img src="images/Robbo.jpg" class="rounded-circle img-fluid"
+                alt="First sample avatar image">
+            </div>
+            <!--Content-->
+            <p>
+              <i class="fas fa-quote-left"></i> Navid is someone who I have the utmost respect for due to his professionalism and attitude to working. The time that we spent working together he was always wanting to learn and progress. He always had the mindset of getting things done quickly, efficiently with the highest quality. His attention to detail stood out and he was always looking at us gaining those small advantages in any way we could due to his analysis.
+              He got on with all his colleagues due to his personality with everyone respecting him.
+              I would highly recommend his skills as a person and a worker!
+            </p>
+            <h4 class="font-weight-bold">Carl Robinson</h4>
+            <h6 class="font-weight-bold my-3">Head Coach of Western Sydney Wanderers FC</h6>
+          </div>
+        </div>
+        <!--First slide-->
+        <!--Second slide-->
+        <div class="carousel-item">
+          <div class="testimonial">
+            <!--Avatar-->
+            <div class="avatar mx-auto mb-4">
+              <img src="images/Peat.png" class="rounded-circle img-fluid"
+                alt="Third sample avatar image">
+            </div>
+            <!--Content-->
+            <p>
+              <i class="fas fa-quote-left"></i> Navid is a very dedicated person and demonstrates a high work ethic in his work activities and his passions. He added great value to the department not only in his work but also how displays a positive attitude in all that he does. He works to learn and then quickly applies his learning. He will have strong future in anything and everything his pursues.</p>
+            <h4 class="font-weight-bold">Andrew Peat</h4>
+            <h6 class="font-weight-bold my-3">Analyst at Vancouver Whitecaps FC</h6>
+          </div>
+        </div>
+        <!--Second slide-->
+        <!--Third slide-->
+        <div class="carousel-item">
+          <div class="testimonial">
+            <!--Avatar-->
+            <div class="avatar mx-auto mb-4">
+              <img src="images/Koch.jpg" class="rounded-circle img-fluid"
+                alt="Second sample avatar image">
+            </div>
+            <!--Content-->
+            <p>
+              <i class="fas fa-quote-left"></i> I thoroughly enjoyed working with Navid at the Vancouver Whitecaps. He was a true professional, flexible, adaptable to change, and able to deal with the pressure of professional sports in a very calm and articulate manner. The quality of his work was always at an incredibly high standard.</p>
+            <h4 class="font-weight-bold">Alan Koch</h4>
+            <h6 class="font-weight-bold my-3">Head Coach of FC Edmonton</h6>
+        
+          </div>
+        </div>
+        <!--Third slide-->
+        <!--Fourth slide-->
+        <div class="carousel-item">
+          <div class="testimonial">
+            <!--Avatar-->
+            <div class="avatar mx-auto mb-4">
+              <img src="images/Kah.jpg" class="rounded-circle img-fluid"
+                alt="Third sample avatar image">
+            </div>
+            <!--Content-->
+            <p>
+              <i class="fas fa-quote-left"></i> Navid is a highly motivated person and excellent with the work he does. I had pleasure of working with him for several years at Vancouver Whitecaps FC. A loyal co worker who is dedicated, ambitious and always gets the job done no matter what. He would be an excellent asset to any organization.</p>
+            <h4 class="font-weight-bold">Pa-Moddou Kah</h4>
+            <h6 class="font-weight-bold my-3">Head Coach of Pacific FC</h6>
+          </div>
+        </div>
+        <!--Fourth slide-->
+        
+      </div>
+    
+
+      
+      <!--Controls-->
+    </div>
+    <!-- Carousel Wrapper -->
+  </div>
+
+</section>
+<!-- Section: Testimonials v.2 -->
+        
+        
+                        
+          
+        
+
+      </main>
+
+      
+    
+      <footer>
+      <% include ./partials/footer.ejs %>
+      </footer>
+      
+
+      <% include ./partials/baseScripts.ejs %>
+      <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+      <script src="https://kit.fontawesome.com/0cf4291129.js"></script>
+
+
+    </body>
+</html>

@@ -2,6 +2,15 @@
 <html lang="en" style = "scroll-behavior: smooth">
 
   <head>
+       <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{env('GAID')}}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', process.env.GAID);
+</script>
     <% include ./partials/head.ejs %>
     <link rel="stylesheet" href="css/landing.css">
 

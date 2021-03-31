@@ -1,5 +1,5 @@
 module.exports = {
     index(req, res, next){
-      res.render("static/work");
+      res.render("static/projects");
     }
   }

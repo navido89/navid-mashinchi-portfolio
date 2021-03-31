@@ -1,10 +1,10 @@
 const request = require ("request");
 const server = require ("../../src/server");
-const base = "http://localhost:3000/work";
+const base = "http://localhost:3000/projects";
 
-describe("routes : work", () => {
+describe("routes : projects", () => {
 
-    describe("GET /work", () => {
+    describe("GET /projects", () => {
 
         it("should return status code 200", (done) => {
 

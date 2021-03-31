@@ -2,7 +2,7 @@ module.exports = {
     init(app){
       const landingRoutes = require("../routes/landing");
       const skillsRoutes = require("../routes/skills");
-      const workRoutes = require("../routes/work");
+      const projectsRoutes = require("../routes/projects");
       const contactRoutes = require("../routes/contact");
       const blogsRoutes = require("../routes/blogs");
       const testimonialsRoutes = require("../routes/testimonials");
@@ -10,7 +10,7 @@ module.exports = {
 
       app.use(blogsRoutes);
       app.use(contactRoutes);
-      app.use(workRoutes);
+      app.use(projectsRoutes);
       app.use(landingRoutes);
       app.use(skillsRoutes);
       app.use(testimonialsRoutes);

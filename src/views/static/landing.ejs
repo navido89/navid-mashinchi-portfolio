@@ -28,56 +28,20 @@
   </head>
 
   <style>
-  .fadeIn {
-animation-duration: 3s;
-animation-delay: 0.5s;
-}
+  .fadeIn { animation-duration: 3s; animation-delay: 0.5s; }
+  .slideInRight { animation-duration: 2s; animation-delay: 0.5s; }
+  .content { padding: 10px; }
 
-.slideInRight {
-animation-duration: 2s;
-animation-delay: 0.5s;
-}
-
-.content {
-          
-          padding: 10px;
-          }
-
-@media (min-width:2400px){
-  .rounded-circle{
-        margin-top:32%;  
-      }
-}
-
-@media (max-width:2000px){
-  .rounded-circle{
-        margin-top:10%;  
-      }
-}
-
-/* @media (max-width:1600px){
-  .rounded-circle{
-        margin-top:14%;  
-      }
-} */
-
-@media (max-width:1000px){
-img{
-        margin-top:20%  
-      }
-h2{
-  font-size: medium;
-}
-}
-
-@media (max-width:500px){
-img{
-        margin-top:20%  
-      }
-h2{
-  font-size: small;
-}
-}
+  /* hero: full-height, vertically centred content over the gradient */
+  .mainpage { display: flex; flex-direction: column; }
+  .mainpage > .jumbotron {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mainpage .container { max-width: 900px; }
+  .mainpage .hero-scroll { margin-top: 2.25rem; }
 
   </style>
 
@@ -95,134 +59,93 @@ h2{
           <section style= "text-align:center" class="jumbotron bg-transparent animated fadeIn">
               <div class="container">
              
-              <img src="images/Head-Shot-3.jpg" class = "rounded-circle mx-auto d-block landingPic img-fluid" alt="Navid Mashinchi Head-Shot">
-              <br>
-                <h2>
-                  <span style= "color: white">N.</span>
-                  <span style= "color: white">M</span>
-                  <span style= "color: white">A</span>
-                  <span style= "color: white">S</span>
-                  <span style= "color: white">H</span>
-                  <span style= "color: white">I</span>
-                  <span style= "color: white">N</span>
-                  <span style= "color: white">C</span>
-                  <span style= "color: white">H</span>
-                  <span style= "color: white">I</span>
-                  <span style= "color: white">&nbsp</span>
-                  <span style= "color: #c71585">D</span>
-                  <span style= "color: #c71585">A</span>
-                  <span style= "color: #c71585">T</span>
-                  <span style= "color: #c71585">A</span>
-                  <span >&nbsp</span>
-                  <span style= "color: #c71585">S</span>
-                  <span style= "color: #c71585">C</span>
-                  <span style= "color: #c71585">I</span>
-                  <span style= "color: #c71585">E</span>
-                  <span style= "color: #c71585">N</span>
-                  <span style= "color: #c71585">T</span>
-                  <span style= "color: #c71585">I</span>
-                  <span style= "color: #c71585">S</span>
-                  <span style= "color: #c71585">T</span>
+              <img src="images/About1.JPEG" class="mx-auto d-block landingPic" alt="Navid Mashinchi">
 
+                <h1 class="hero-name">Navid Mashinchi</h1>
 
-               </h2>
-                
-                <a href="#greeting1" style="text-align:center;"><i class="fas fa-chevron-circle-down button1"></i></a>
+                <p class="hero-tagline">Retail data scientist. I build AI and machine learning systems for demand forecasting, inventory optimization, allocation, and product recommendations at some of the largest retailers in the U.S. and abroad.</p>
+
+                <a href="#retail" class="hero-scroll" aria-label="Scroll down"><i class="fas fa-angle-down"></i><i class="fas fa-angle-down"></i></a>
             </div>
           </section>
-      </div>        
-    
+      </div>
 
 
-            
-            <section class= "jumbotron my-1" style="text-align: center; background-color: #f9f9f9" id="greeting">
-              <div class="container">
-              <h3 class="animated slideInRight animated fadeIn"  style = "font-family: myriad; color: #c71585">"Never let success go to your head and never let failure go to your heart" -Ziad K.Abdelnour</h3> 
+            <!-- Retail experience -->
+            <section id="retail" class="logo-strip animated fadeIn">
+              <p class="logo-strip__label">Retail data science, in production</p>
+              <div class="logo-strip__items">
+                <span class="logo-strip__item">Vans</span>
+                <span class="logo-strip__item">The North Face</span>
+                <span class="logo-strip__item">Timberland</span>
+                <span class="logo-strip__item">Kohl&rsquo;s</span>
               </div>
             </section>
 
-            <hr class="animated fadeIn" style = "background-color:#c71585">
-
-         
-    
-            
-            
-
-            <div class = "jumbotron animated fadeIn" style="background-color: #f9f9f9">  
-                <div class="container">
-                      <div class="row">
-                          <div class="col-md-6 how-img">
-                            <img src= "images/About1.JPEG" class= "float-left img-fluid" alt="About Picture">              
-                          </div>
-                          <div class="col-md-6" style="margin-top:0px;">
-                            
-                            <p id="greeting1"> I’m a Senior Data Scientist at VF Corporation, passionate about building scalable AI and machine learning systems that drive real-world impact across global brands. At VF, I support the Vans brand, one of the most iconic names in apparel and footwear, by developing Machine Learning & AI solutions that power personalization, forecasting, and customer experience innovation.</p>
-                      
-                            <p>Previously, I worked at Kohl’s, where I led machine learning initiatives in product recommendation and forecasting, helping to enhance retail decision-making at scale.</p>
-                            
-                            <p>Beyond industry, I’m an Adjunct Professor at the University of Denver, teaching graduate-level courses in Machine Learning and Database Systems. I’m also a published contributor on Towards Data Science and KDnuggets, and an award-winning Streamlit app developer.</p>
-                            
-                            <p>With experience spanning retail, supply chain, sports analytics (formerly with Vancouver Whitecaps FC), and academia, I’m driven by the intersection of data, engineering, and human decision-making. I love tackling complex problems, mentoring the next generation of data professionals, and exploring how AI can unlock creativity and value across industries.</p>
-                            
-                            <p>If you would like to learn more about me, feel free to have a look at my resume.</p>
-                            
-                            <a href= "navid-mashinchi-resume-data-science.pdf" target="_blank"style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">My Resume</button></a>
-
-                              
-                               
-                            
-          
-                          </div>
-                      </div>
-                  </div>
-            </div>
-
-            <hr class="animated fadeIn" style = "background-color:#c71585">
-
-            <section class="row text-center jumbotron animated fadeIn" style="background-color: #f9f9f9">
+            <!-- About -->
+            <section class="section section--alt about animated fadeIn">
               <div class="container">
-                <h3 style="padding:10px;text-align:center">Latest News & Publications</h3>
-                    <div class="row">
-                      <!-- Article 1 -->
-                      <div class="col-xs-4 col-sm-12 col-md-4 col-lg-4">
-                        <div class="content">
-                            <div class = "news-image">
-                              <img src="images/DAMN9.jpeg" class="thumbnail img-fluid" alt="From Soccer Pro to Data Pro" class = "image">
-                              <br>
-                              <br>
-                              <a href="https://dataandmarketingnation.com/podcast/damn-9-from-soccer-pro-to-data-pro-with-navid-mashinchi/" target="_blank"style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center" style="font-size: 14px;">The DAMN Podcast - From Soccer Pro to Data Pro
-                              </button></a>      
-                            </div>
-                        </div>
-                      </div> 
-                      <!-- Article 2 -->
-                      <div class="col-xs-4 col-sm-12 col-md-4 col-lg-4">
-                        <div class="content">
-                          <div class = "news-image"> 
-                            <img src="images/Kohls1.jpeg" class="thumbnail img-fluid" alt="Onboarding At Kohl's Data Science
-                            " class="image">
-                            <br>
-                            <br>
-                            <a href="https://medium.com/kohls-data-science/onboarding-at-kohls-data-science-4e0af3d0eec4" target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center" style="font-size: 14px;">Onboarding At Kohl's Data Science
-                            </button></a>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Article 3 -->
-                      <div class="col-xs-4 col-sm-12 col-md-4 col-lg-4">
-                        <div class="content">
-                            <div class = "news-image">
-                              <img src="images/Grad-School-To-DS.jpeg" class="thumbnail img-fluid" alt="From Grad School To Becoming A Data Scientist" class = "image">
-                              <br>
-                              <br>
-                              <a href="https://towardsdatascience.com/from-graduate-school-to-becoming-a-data-scientist-513fc15a05bb"  target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center button2" style="font-size: 14px;">From Grad School To Becoming A Data Scientist</button></a>
-                              
-                            </div>
-                          </div>
-                        </div>
-                              
+                <div class="row">
+                  <div class="col-md-7 about__body">
+                    <p id="greeting1">I&rsquo;m a Senior Data Scientist who specializes in retail. Over the past several years I&rsquo;ve built machine learning and AI systems for two of the largest retailers in the United States, from the forecasting and optimization models that decide what gets made, how much of it, and where it goes, to the recommender systems that shape what shoppers see online.</p>
+
+                    <p>I&rsquo;m currently at VF Corporation, supporting its top three brands, Vans, The North Face, and Timberland, on demand forecasting and inventory optimization. Before VF I spent four years at Kohl&rsquo;s: I started in supply chain on ETA forecasting, moved into e-commerce to build the recommender systems behind product recommendations on Kohls.com, and then returned to supply chain for demand forecasting, optimization, and allocation.</p>
+
+                    <p>That blend of customer-facing and behind-the-scenes retail work is the part I enjoy most. Outside of industry I&rsquo;m an Adjunct Professor at the University of Denver, teaching graduate courses in Machine Learning and Database Systems, a published contributor on Towards Data Science and KDnuggets, and a guest on <a href="https://www.youtube.com/watch?v=9J334syPGf8&amp;t=136s" target="_blank">the DAMN Podcast</a>, where I talked about my path from professional soccer to data science.</p>
+
+                    <div class="about__cta">
+                      <a href="navid-mashinchi-resume-data-science.pdf" target="_blank"><button type="button" class="button">My Resume</button></a>
+                      <a href="/projects"><button type="button" class="button button2">View Projects</button></a>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <aside class="at-a-glance">
+                      <h4>At a glance</h4>
+                      <dl>
+                        <dt>Role</dt>
+                        <dd>Senior Data Scientist, VF Corporation</dd>
+                        <dt>Focus</dt>
+                        <dd>Demand forecasting, inventory optimization, recommender systems</dd>
+                        <dt>Teaching</dt>
+                        <dd>Adjunct Professor, Applied Data Science &amp; AI Master&rsquo;s Program, University of Denver</dd>
+                        <dt>Previously</dt>
+                        <dd>Data Scientist at Kohl&rsquo;s, 2021 to 2025</dd>
+                        <dt>Education</dt>
+                        <dd>M.S. Data Science, University of Denver</dd>
+                        <dt>Based in</dt>
+                        <dd>Southern California</dd>
+                      </dl>
+                    </aside>
+                  </div>
+                </div>
               </div>
-            </section>        
+            </section>
+
+            <!-- Areas of expertise -->
+            <section class="section animated fadeIn">
+              <div class="container">
+                <h3 class="section-heading">Areas of expertise</h3>
+                <p class="section-sub">The retail problems I spend my time on, from the warehouse to the website.</p>
+                <div class="feature-grid feature-grid--plain">
+                  <div class="feature-card">
+                    <i class="fas fa-chart-line feature-card__icon"></i>
+                    <h4>Demand Forecasting</h4>
+                    <p>Time-series and machine learning models that predict what customers will buy, so brands can plan production and buys with confidence.</p>
+                  </div>
+                  <div class="feature-card">
+                    <i class="fas fa-warehouse feature-card__icon"></i>
+                    <h4>Inventory Optimization &amp; Allocation</h4>
+                    <p>Deciding how much stock to hold and where to send it, balancing service levels against carrying cost across the network.</p>
+                  </div>
+                  <div class="feature-card">
+                    <i class="fas fa-bullseye feature-card__icon"></i>
+                    <h4>Recommender Systems</h4>
+                    <p>The personalization models behind product recommendations in e-commerce, from candidate generation through ranking.</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
 
       </main>
 

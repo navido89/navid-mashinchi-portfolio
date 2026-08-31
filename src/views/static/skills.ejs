@@ -6,7 +6,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
+
       gtag('config', 'G-KKHCER7SPK');
     </script>
     <% include ./partials/head.ejs %>
@@ -14,146 +14,104 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
-  
+
   <body>
 
     <% include ./partials/navbar.ejs %>
 
       <main>
-          <p class="animated fadeIn"  style = "font-family: myriad; color: #c71585; font-size: 80px; text-align:center;">Skills</p> 
+          <p class="animated fadeIn page-title">Skills</p>
 
-      
-          <div class = "jumbotron animated fadeIn" style="background-color: #f9f9f9;">  
-              <div class="container">
-                    <br>
-                    <div class="row">
-                        <div class="col-md-6 how-img">
-                            <span class="iconify" data-icon="carbon:logo-python" data-inline="false" style= "font-size: 90px; color: #c71585"></span>
-                            <span class="iconify" data-icon="cib:r" data-inline="false" style= "font-size: 90px; color: #c71585"></span>                            
-                            <span class="iconify" data-icon="cib:javascript" data-inline="false" style= "font-size: 90px; color: #c71585"></span>                        
-                        </div>
-                        <div class="col-md-6" style="margin-top:0px;">
-                            <h4> Languages: Python, R, JavaScript</h4>
-                            <p>I am most proficient in Python and I consistently use it in my projects. I am also familiar with R and JavaScript. In regard to Computer Science, I have a very good understanding of data structures, searching and sorting algorithms and the concepts of time and space complexities.</p>
-
-                        </div>
-                    </div>
-                </div>
-          </div>
-
-          <hr class="animated fadeIn" style = "background-color:#c71585">
-
-
-          <div class = "jumbotron animated fadeIn" style="background-color: #f9f9f9">  
-              <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 how-img">
-                      <span class="iconify" data-icon="simple-icons:pandas" data-inline="false" style= "font-size: 90px; color: #c71585"></span>
-                      <span class="iconify" data-icon="file-icons:numpy" data-inline="false" style= "font-size: 90px; color: #c71585"></span>
-                      <span class="iconify" data-icon="carbon:clean" data-inline="false" style= "font-size: 90px; color: #c71585"></span>
-                        </div>
-                        <div class="col-md-6" style="margin-top:0px;">
-                            <h4> Data Cleaning: Pandas, NumPy</h4>
-                            <p> During a data science project, I spend most of the time in cleaning and organizing data. I constantly use Pandas and NumPy for those stages. Those tools become also handy when I do my initial investigation on the data. It also helps me discover patterns, test hypothesis and check for assumptions with the help of summary statistics and graphical representations. </p>
-
-                        </div>
-                    </div>
-                </div>
-          </div>
-
-          <hr class="animated fadeIn" style = "background-color:#c71585">
-
-          <div class = "jumbotron animated fadeIn" style="background-color: #f9f9f9">  
+          <section class="section animated fadeIn">
             <div class="container">
-                  <div class="row">
-                      <div class="col-md-6 how-img">
-                        <span class="iconify" data-icon="carbon:qq-plot" data-inline="false" style= "font-size: 90px; color: #c71585"></span>
-                        <span class="iconify" data-icon="uim:graph-bar" data-inline="false" style= "font-size: 90px; color: #c71585"></span>
-                        <span class="iconify" data-icon="foundation:graph-pie" data-inline="false" style= "font-size: 90px; color: #c71585"></span>
-                  </div>
-                      <div class="col-md-6" style="margin-top:0px;">
-                          <h4> Data Visualization: Seaborn, Matplotlib, Plotly</h4>
-                          <p>Data visualization is one part of the data science project life cycle that I enjoy a lot. I am experienced in using Seaborn, Matplotlib, and Plotly. I am also a big fan of Geoplot and Folium, which I have used in my work. When I write code in R, I feel most comfortable using Ggplot.</p>
+              <p class="section-sub">The tools and methods I use to take retail data problems from question to production.</p>
 
-                      </div>
+              <div class="feature-grid">
+
+                <div class="feature-card">
+                  <span class="iconify" data-icon="carbon:code"></span>
+                  <h4>Programming Languages</h4>
+                  <p>Python for data science and production machine learning, SQL for everything data, plus R for statistics and JavaScript / Node.js for building data apps.</p>
+                  <div class="chips">
+                    <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">R</span><span class="chip">JavaScript</span>
                   </div>
+                </div>
+
+                <div class="feature-card">
+                  <span class="iconify" data-icon="carbon:chart-histogram"></span>
+                  <h4>Data Analysis &amp; Statistics</h4>
+                  <p>Cleaning, reshaping, and feature engineering with Pandas and NumPy, plus the exploratory analysis, statistical modeling, and hypothesis testing that keep conclusions honest.</p>
+                  <div class="chips">
+                    <span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">SciPy</span><span class="chip">statsmodels</span>
+                  </div>
+                </div>
+
+                <div class="feature-card">
+                  <span class="iconify" data-icon="carbon:machine-learning-model"></span>
+                  <h4>Machine Learning &amp; AI</h4>
+                  <p>Classification, regression, recommendation, and forecasting with scikit-learn, XGBoost, and TensorFlow, plus LLM-powered and agentic AI workflows.</p>
+                  <div class="chips">
+                    <span class="chip">scikit-learn</span><span class="chip">XGBoost</span><span class="chip">TensorFlow</span><span class="chip">LLMs</span>
+                  </div>
+                </div>
+
+                <div class="feature-card">
+                  <span class="iconify" data-icon="carbon:chart-line-data"></span>
+                  <h4>Forecasting &amp; Optimization</h4>
+                  <p>Time-series and machine learning forecasters, from ARIMA to gradient boosting, turned into demand plans, inventory targets, and allocation decisions.</p>
+                  <div class="chips">
+                    <span class="chip">ARIMA</span><span class="chip">Prophet</span><span class="chip">Gradient Boosting</span>
+                  </div>
+                </div>
+
+                <div class="feature-card">
+                  <span class="iconify" data-icon="carbon:chart-multitype"></span>
+                  <h4>Data Visualization &amp; Apps</h4>
+                  <p>Seaborn, Matplotlib, and Plotly for analysis, Folium and GeoPandas for maps, and award-winning Streamlit apps so stakeholders can explore the work themselves.</p>
+                  <div class="chips">
+                    <span class="chip">Plotly</span><span class="chip">Seaborn</span><span class="chip">Streamlit</span><span class="chip">Folium</span>
+                  </div>
+                </div>
+
+                <div class="feature-card">
+                  <span class="iconify" data-icon="carbon:cloud"></span>
+                  <h4>Cloud &amp; MLOps</h4>
+                  <p>Building and deploying pipelines on GCP and AWS, with Databricks and Spark for scale and Kubeflow plus CI/CD to keep them reproducible and monitored.</p>
+                  <div class="chips">
+                    <span class="chip">GCP</span><span class="chip">AWS</span><span class="chip">Databricks</span><span class="chip">Kubeflow</span>
+                  </div>
+                </div>
+
+                <div class="feature-card">
+                  <span class="iconify" data-icon="carbon:data-base"></span>
+                  <h4>Databases</h4>
+                  <p>SQL across MySQL, PostgreSQL, and BigQuery for analytical and production workloads, and MongoDB for document data.</p>
+                  <div class="chips">
+                    <span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">BigQuery</span><span class="chip">MongoDB</span>
+                  </div>
+                </div>
+
+                <div class="feature-card">
+                  <span class="iconify" data-icon="carbon:branch"></span>
+                  <h4>Version Control &amp; Collaboration</h4>
+                  <p>Git and GitHub day to day for branching, code review, and shipping readable, well-documented code a team can maintain. I also teach these practices at the University of Denver.</p>
+                  <div class="chips">
+                    <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">CI/CD</span>
+                  </div>
+                </div>
+
               </div>
-        </div>
-
-        <hr class="animated fadeIn" style = "background-color:#c71585">
-
-
-          <div class = "jumbotron animated fadeIn" style="background-color: #f9f9f9">  
-              <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 how-img">
-                      <span class="iconify" data-icon="mdi:head-cog-outline" data-inline="false" style= "font-size: 90px; color: #c71585"></span>
-                      <span class="iconify" data-icon="simple-icons:scikit-learn" data-inline="false" style= "font-size: 90px; color: #c71585"></span>
-                      <span class="iconify" data-icon="cib:tensorflow" data-inline="false" style= "font-size: 90px; color: #c71585"></span>
-                        </div>
-                        <div class="col-md-6" style="margin-top:0px;">
-                            <h4>Machine Learning: Scikit-Learn, TensorFlow</h4>
-                            <p> In the matter of machine learning models, I am most comfortable working with Scikit-Learn. I enjoy working with Scikit-Learn a lot, since I have a good understanding of most of their algorithms. I have also used it in my previous projects. I am also familiar working with TensorFlow, when working on problems that consist of neural networks. </p>
-
-                        </div>
-                    </div>
-                </div>
-          </div>
-          
-          <hr class="animated fadeIn" style = "background-color:#c71585">
-
-
-          <div class = "jumbotron animated fadeIn" style="background-color: #f9f9f9">  
-              <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 how-img">
-                            <span class="iconify" data-icon="bx:bxs-data" data-inline="false" style= "font-size: 90px; color: #c71585"></span>
-                            <span class="iconify" data-icon="carbon:data-base" data-inline="false" style= "font-size: 90px; color: #c71585"></span>                            
-                            <span class="iconify" data-icon="ant-design:cloud-server-outlined" data-inline="false" style= "font-size: 90px; color: #c71585"></span>
-                        </div>
-                        <div class="col-md-6" style="margin-top:0px;">
-                            <h4>Databases: SQL, MongoDB</h4>
-                            <p> In regards to databases I am most trained in SQL and MongoDB. In the past, I was also exposed to Google's Firebase, PostgreSQL and Sequelize.</p>
-
-                        </div>
-                    </div>
-                </div>
-          </div>
-          
-          <hr class="animated fadeIn" style = "background-color:#c71585">
-
-
-          <div class = "jumbotron animated fadeIn" style="background-color: #f9f9f9">  
-              <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 how-img">
-                            <span class="iconify" data-icon="topcoat:github-text" data-inline="false" style= "font-size: 90px; color:  #c71585"></span>                            
-                            <span class="iconify" data-icon="ant-design:github-outlined" data-inline="false" style= "font-size: 90px; color:  #c71585"></span>
-                            <span class="iconify" data-icon="clarity:organization-line" data-inline="false" style= "font-size: 90px; color:  #c71585"></span>
-                        </div>
-                        <div class="col-md-6" style="margin-top:0px;">
-                            <h4> Version Control Systems: Git, GitHub</h4>
-                            <p> When I begin a new project, I make sure to plan accordingly and organize myself in the best possible way. For that, version control tools are a must, I use Git and GitHub on a regular basis.</p>
-
-                        </div>
-                    </div>
-                </div>
-          </div>
-
-
-      
-
-       
-
+            </div>
+          </section>
 
       </main>
-      
-      
-    
+
+
+
       <footer>
       <% include ./partials/footer.ejs %>
     </footer>
-      
+
 
       <% include ./partials/baseScripts.ejs %>
       <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
@@ -161,5 +119,5 @@
 
 
     </body>
-    
+
 </html>

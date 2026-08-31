@@ -7,11 +7,10 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
+
       gtag('config', 'G-KKHCER7SPK');
     </script>
     <% include ./partials/head.ejs %>
-    <link rel="stylesheet" href="css/work.css">
     <link rel="stylesheet" href="css/work.css">
 
   </head>
@@ -21,263 +20,77 @@
     <% include ./partials/navbar.ejs %>
 
       <main>
-            <p class="animated fadeIn"  style = "font-family: myriad; color: #c71585; font-size: 80px; text-align:center;">Projects</p> 
-            <!-- Projects section v.3 -->
-<section class="my-5">
+        <p class="animated fadeIn page-title">Projects</p>
 
-      <div class="row animated fadeIn">
-      
-        <!-- Grid column -->
-        <div class="col-lg-5 mb-lg-0 mb-5">
-          <!--Image-->
-          <img src="images/Covid19.jpeg" alt="Sample project image" class="img-fluid rounded z-depth-1">
-        </div>
-        <!-- Grid column -->
+        <section class="section animated fadeIn">
+          <div class="container">
+            <p class="section-sub">Selected machine learning work from my time at VF Corporation and Kohl's.</p>
 
-        <!-- Grid column -->
-        <div class="col-lg-7">
-
-          <!-- Grid row -->
-          <div class="row mb-3">
-            <div class="col-md-11 col-10">
-              <h5 class="font-weight-bold mb-3">Title:</h5>
-              <p class="grey-text">The Current State of COVID-19 From 3 Different Perspectives | <b><i>Data Visualization</i></b></p>
-              <h6 class="grey-text"><b>Project Status:</b> Currently Not Maintained</h6>
-            </div>
-          </div>
-          <!-- Grid row -->
-
-          <!-- Grid row -->
-          <div class="row mb-3">
-            <div class="col-md-11 col-10">
-              <h5 class="font-weight-bold mb-3">Description:</h5>
-              <p class="grey-text">The purpose of this project is to have a look at the current state of COVID-19 using visualizations from different geographical perspectives. The plots have been created by using data visualization tools such as Plotly and Folium. The project is broken down into three parts.
-                <ul>
-                  <li>Global COVID-19 Situation: We will display a folium map that shows the total cases, total deaths, total cases per 100,000, and total deaths per 100,000. In addition to that, we will display various time series plots to understand better how the disease spreads over time across the globe.</li>
-                  <li>COVID-19 Situation by World Health Organization Region (WHO): In the following section, we look at the disease from the World Health Organization's regional perspective. We will compare the different regions based on their total cases, total deaths, total cases per 100 million and total deaths per 100 million deaths.</li>
-                  <li>COVID-19 Situation in the United States: Last but not least, we pay our attention to the United States and explore the current situation in the US based on the cases, deaths (with and without per capita), vaccine status, and the status of the different variants spreading across the states.</p></li>
-                </ul>  
-            </div>
-          </div>
-          <!-- Grid row -->
-
-          <!-- Grid row -->
-          <div class="row">
-            <div class="col-md-11 col-10">
-              <h5 class="font-weight-bold mb-3">Technologies:</h5>
-              <p class="grey-text mb-0">Streamlit, Python, Pandas, NumPy, GeoPandas,Folium, Plotly, Branca, Jinja2, Date</p>
-            </div>
-          </div>
-          <!-- Grid row -->
-
-          <!-- Grid row -->
-          <div class="row mb-3">
-              <div class="row">
-                <!-- <h5 class="font-weight-bold mb-3">Links:</h5> -->
-                <a href="https://share.streamlit.io/navido89/covid19-dashboard-dataviz/app.py" target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">Web App</button></a>
-                <a href="https://towardsdatascience.com/the-current-state-of-covid-19-from-3-different-perspectives-3fbaabcd0348"  target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">Read Article</button></a>
-                <a href="https://github.com/navido89/covid19-dashboard-dataviz" target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">GitHub Link</button></a>
+            <!-- VF 1 -->
+            <article class="project-card project-card--text">
+              <div class="project-card__meta">
+                <span class="project-card__company">VF Corporation</span>
+                <span class="project-card__role">Senior Data Scientist &middot; 2025 - Present</span>
               </div>
-            </div>
-            <!-- Grid row -->
-
-        </div>
-        <!-- Grid column -->
-
-      </div>
-      <!-- Grid row -->
-      <hr class="animated fadeIn" style = "background-color:#c71585">
-
-  
-      <div class="row animated fadeIn">
-  
-        <!-- Grid column -->
-        <div class="col-lg-5 mb-lg-0 mb-5">
-          <!--Image-->
-          <img src="images/Data_Has_A_Better_Idea.jpg" alt="Sample project image" class="img-fluid rounded z-depth-1">
-        </div>
-        <!-- Grid column -->
-    
-        <!-- Grid column -->
-        <div class="col-lg-7">
-    
-          <!-- Grid row -->
-          <div class="row mb-3">
-            <div class="col-md-11 col-10">
-              <h5 class="font-weight-bold mb-3">Title:</h5>
-              <p class="grey-text">California Data Science Job Market Analysis | <b><i>Exploratory Data Analysis (EDA) Problem</i></b></p>
-              <h6 class="grey-text"><b>Project Status:</b> Completed</h6>
-            </div>
-          </div>
-          <!-- Grid row -->
-    
-          <!-- Grid row -->
-          <div class="row mb-3">
-            <div class="col-md-11 col-10">
-              <h5 class="font-weight-bold mb-3">Description:</h5>
-              <p class="grey-text">The purpose of this project is to examine the current data science job market in California. Which city has the most job posts in California and offers more opportunities? As a current Data Science Master's student, I wanted to find out which jobs a master's degree holder would be eligible to apply for and what skills are most in-demand.</p>
-            </div>
-          </div>
-          <!-- Grid row -->
-    
-          <!-- Grid row -->
-          <div class="row">
-            <div class="col-md-11 col-10">
-              <h5 class="font-weight-bold mb-3">Technologies:</h5>
-              <p class="grey-text mb-0">Python, BeautifulSoup, Selenium, ChromeDriverManager, NumPy, Time, Random, Pandas, Uszipcode, Seaborn, Folium, Nominatim, Matplotlib, Template, MacroElement, Copy, PrettyTable.</p>
-            </div>
-          </div>
-          <!-- Grid row -->
-  
-          <!-- Grid row -->
-          <div class="row mb-3">
-              <div class="row">
-                <!-- <h5 class="font-weight-bold mb-3">Links:</h5> -->
-                <a href="https://towardsdatascience.com/california-data-science-job-market-analysis-b42d7c82ab00"  target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">Read Article</button></a>
-                <a href="https://github.com/navido89/DS-Job-Market-Analysis" target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">GitHub Link</button></a>
+              <h3>Vans Inventory Rebalance</h3>
+              <p>Leading the Inventory Rebalance initiative for the Vans AMER region: optimizing how inventory is allocated across the distribution network so that stock sits where demand actually is, rather than piling up in some locations while others run short. Built on Python, Databricks, and machine learning.</p>
+              <div class="project-impact"><strong>In progress:</strong> reducing stock imbalances across the AMER distribution network.</div>
+              <div class="chips">
+                <span class="chip">Python</span><span class="chip">Databricks</span><span class="chip">Optimization</span><span class="chip">Machine Learning</span>
               </div>
-            </div>
-            <!-- Grid row -->
-    
-        </div>
-        <!-- Grid column -->
-    
-      </div>
-      <!-- Grid row -->
+            </article>
 
-    <!-- Grid row -->
-    <hr class="animated fadeIn" style = "background-color:#c71585">
-
-    <div class="row animated fadeIn">
-  
-      <!-- Grid column -->
-      <div class="col-lg-5 mb-lg-0 mb-5">
-        <!--Image-->
-        <img src="images/Police.jpeg" alt="Sample project image" class="img-fluid rounded z-depth-1">
-      </div>
-      <!-- Grid column -->
-  
-      <!-- Grid column -->
-      <div class="col-lg-7">
-  
-        <!-- Grid row -->
-        <div class="row mb-3">
-          <div class="col-md-11 col-10">
-            <h5 class="font-weight-bold mb-3">Title:</h5>
-            <p class="grey-text">An Examination of Fatal Force by Police in the US | <b><i> Classification & Multi Classification Problem</i></b></p>
-            <h6 class="grey-text"><b>Project Status:</b> Completed</h6>
-          </div>
-        </div>
-        <!-- Grid row -->
-  
-        <!-- Grid row -->
-        <div class="row mb-3">
-          <div class="col-md-11 col-10">
-            <h5 class="font-weight-bold mb-3">Description:</h5>
-            <p class="grey-text">In this project, we examine the factors that play into the horrible event of a fatal shooting by the police in the United States of America. Which ones carry more weight that lead to fatal shootings and are perhaps predictive in nature? Are they race? State location? Mental Illness? Based on our findings from the dataset of the available variables, we looked to predict the deceased’s race or mental illness status.</p>
-          </div>
-        </div>
-        <!-- Grid row -->
-  
-        <!-- Grid row -->
-        <div class="row">
-          <div class="col-md-11 col-10">
-            <h5 class="font-weight-bold mb-3">Technologies:</h5>
-            <p class="grey-text mb-0">Python, Pandas, NumPy, Re, Seaborn, Matplotlib, Copy, Geopandas, Folium, Nominatim, Template, MacroElement, Sklearn, RandomizedSearchCV, PrettyTable.</p>
-          </div>
-        </div>
-        <!-- Grid row -->
-
-        <!-- Grid row -->
-        <div class="row mb-3">
-            <div class="row">
-              <!-- <h5 class="font-weight-bold mb-3">Links:</h5> -->
-              <a href="https://towardsdatascience.com/an-examination-of-fatal-force-by-police-in-the-us-db897d97085c"  target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">Read Article</button></a>
-              <a href="https://github.com/navido89/Police_Force_US" target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">GitHub Link</button></a>
-            </div>
-          </div>
-          <!-- Grid row -->
-  
-      </div>
-      <!-- Grid column -->
-  
-    </div>
-    <!-- Grid row -->
-  
-    <hr class="animated fadeIn" style = "background-color:#c71585">
-    <!-- Grid row -->
-    <div class="row animated fadeIn">
-  
-        <!-- Grid column -->
-        <div class="col-lg-5 mb-lg-0 mb-5">
-          <!--Image-->
-          <img src="images/ARIMA.png" alt="Sample project image" class="img-fluid rounded z-depth-1">
-        </div>
-        <!-- Grid column -->
-    
-        <!-- Grid column -->
-        <div class="col-lg-7">
-    
-          <!-- Grid row -->
-          <div class="row mb-3">
-            <div class="col-md-11 col-10">
-              <h5 class="font-weight-bold mb-3">Title:</h5>
-              <p class="grey-text">Predicting number of Covid19 deaths using Time Series Analysis (ARIMA MODEL) | <b><i>Time Series Forecasting Problem</i></b></p>
-              <h6 class="grey-text"><b>Project Status:</b> Completed</h6>
-            </div>
-          </div>
-          <!-- Grid row -->
-    
-          <!-- Grid row -->
-          <div class="row mb-3">
-            <div class="col-md-11 col-10">
-              <h5 class="font-weight-bold mb-3">Description:</h5>
-              <p class="grey-text">In this project, a Time Series Analysis (ARIMA Model) predicts the number of deaths in the United States starting from August 1st – August 21st and August 1st – November 1st. The goal of this project was to compare our results with the projections that have been made by CNN. In addition to the comparison to CNN the aim was to get a deeper understanding of Time Series Analysis and the ARIMA model as well.</p>
-            </div>
-          </div>
-          <!-- Grid row -->
-    
-          <!-- Grid row -->
-          <div class="row">
-            <div class="col-md-11 col-10">
-              <h5 class="font-weight-bold mb-3">Technologies:</h5>
-              <p class="grey-text mb-0">R, Ggplot2, Tidyverse, Zoo, aTSA, Ggplot2tseries, Forecast, Lubridate.</p>
-            </div>
-          </div>
-          <!-- Grid row -->
-  
-          <!-- Grid row -->
-          <div class="row mb-3">
-              <div class="row">
-                <!-- <h5 class="font-weight-bold mb-3">Links:</h5> -->
-                <a href="https://towardsdatascience.com/predicting-number-of-covid19-deaths-using-time-series-analysis-arima-model-4ad92c48b3ae"  target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">Read Article</button></a>
-                <a href="https://github.com/navido89/Time-Series-Analysis-ARIMA-Model-Covid19-Predictions" target="_blank" style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">GitHub Link</button></a>
+            <!-- VF 2 -->
+            <article class="project-card project-card--text">
+              <div class="project-card__meta">
+                <span class="project-card__company">VF Corporation</span>
+                <span class="project-card__role">Senior Data Scientist &middot; 2025 - Present</span>
               </div>
-            </div>
-            <!-- Grid row -->
-    
-        </div>
-        <!-- Grid column -->
-    
-      </div>
-      <!-- Grid row -->
-    
-      
-      
-    
-    
-  
-  
-</section>  
+              <h3>Automated Demand Forecasting &amp; Inventory Optimization Pipeline</h3>
+              <p>Rebuilt the Vans demand forecasting and inventory optimization workflow as a single automated, end-to-end pipeline running on Python, AWS, and Databricks, replacing a slow manual process.</p>
+              <div class="project-impact"><strong>Cut model runtime by more than 90%</strong>, from 48 hours down to 4.</div>
+              <div class="chips">
+                <span class="chip">Python</span><span class="chip">AWS</span><span class="chip">Databricks</span><span class="chip">Forecasting</span>
+              </div>
+            </article>
 
-   </main>
-      
-      
-    
+            <!-- Kohl's 1 -->
+            <article class="project-card project-card--text">
+              <div class="project-card__meta">
+                <span class="project-card__company">Kohl's</span>
+                <span class="project-card__role">Data Scientist I, Product Recommendations &middot; 2023 - 2025</span>
+              </div>
+              <h3>Kohls.com Product Recommendation Engine</h3>
+              <p>Designed, built, and deployed a Hybrid Matrix Factorization recommendation model for Kohls.com product detail pages using LightFM, BigQuery, Vertex AI, and Kubeflow. Led the architecture and code reviews and drove the cross-functional rollout with engineering and product.</p>
+              <div class="project-impact"><strong>$13.8M revenue lift</strong>, with personalization coverage expanded from 500K to 20M customers.</div>
+              <div class="chips">
+                <span class="chip">LightFM</span><span class="chip">BigQuery</span><span class="chip">Vertex AI</span><span class="chip">Kubeflow</span><span class="chip">Python</span>
+              </div>
+            </article>
+
+            <!-- Kohl's 2 -->
+            <article class="project-card project-card--text">
+              <div class="project-card__meta">
+                <span class="project-card__company">Kohl's</span>
+                <span class="project-card__role">Supply Chain Movement &middot; 2021 - 2023</span>
+              </div>
+              <h3>U.S. Port Inventory Arrival Forecasting</h3>
+              <p>Prototyped, evaluated, and then productionized a LightGBM model that forecasts when inventory will arrive at U.S. ports. Refactored notebooks into modular Python and Kubeflow components and built a Streamlit dashboard for real-time model monitoring.</p>
+              <div class="project-impact"><strong>Improved 6-month forecast accuracy by 67%.</strong></div>
+              <div class="chips">
+                <span class="chip">LightGBM</span><span class="chip">Python</span><span class="chip">Kubeflow</span><span class="chip">Optuna</span><span class="chip">Streamlit</span>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+      </main>
+
       <footer>
       <% include ./partials/footer.ejs %>
     </footer>
-      
+
 
       <% include ./partials/baseScripts.ejs %>
       <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
@@ -285,5 +98,5 @@
 
 
     </body>
-    
+
 </html>

@@ -2,7 +2,7 @@
 <html lang="en" style = "scroll-behavior: smooth">
 
   <head>
-  
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KKHCER7SPK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -12,20 +12,12 @@
   gtag('config', 'G-KKHCER7SPK');
 </script>
     <% include ./partials/head.ejs %>
-    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="css/blogs.css">
 
     <style>
-      .fadeIn {
-    animation-duration: 3s;
-    animation-delay: 0.5s;
-    }
-    
-    .slideInRight {
-    animation-duration: 2s;
-    animation-delay: 0.5s;
-    }
-      </style>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+      .fadeIn { animation-duration: 3s; animation-delay: 0.5s; }
+      .slideInRight { animation-duration: 2s; animation-delay: 0.5s; }
+    </style>
 
   </head>
 
@@ -34,52 +26,59 @@
     <% include ./partials/navbar.ejs %>
 
       <main>
-        <p class="animated fadeIn"  style = "font-family: myriad; color: #c71585; font-size: 80px; text-align:center;">Blog</p> 
+        <p class="animated fadeIn page-title">Blog</p>
 
-        <div class = "jumbotron animated fadeIn" style="background-color: #f9f9f9">  
+        <section class="section section--alt animated fadeIn">
           <div class="container">
-                <div class="row">
-                    <div class="col-md-6 how-img">
-                      <img src= "images/Blog.jpg" class= "float-center img-fluid" alt="Blog Picture">
-                      <img src= "images/MediumLogo.png" class= "float-center img-fluid" alt="Medium Logo">                      
-                      
-                    </div>
-                    
-                    <div class="col-md-6" style="margin-top:0px;">
-                      
-                      <p id="blogging"> Blogging is a strong passion of mine that I have developed over the years. It's a good learning habit, relaxing and it is also calms my mind. It allows me to reflect about what I have learned and accomplished. I enjoy mostly writing about concepts that I have learned and my most recent projects. </p>
-
-                      <p>Writing about concepts, forces me to teach myself what I know. I believe the best way to determine if you really understand a concept is how easy it is for you to explain it to someone. Writing about concepts is just a great way to reinforce your understanding of the concept.</p>
-
-                      <p>In regard to my projects, I always like to showcase the work that I have done and the insights I was able to gather from my data science project. At the end of the day communicating the findings of a data science project to a technical or non-technical audience is an important skill to have.  </p>
-                
-                      <p>I write my blogs on Medium.com and I publish the majority of my articles in the group "Towards Data Science". It's one of the biggest groups on Medium and it's a great platform to exchange ideas, present your work and expand your understanding of data science.</p>
-
-                      <p>Feel free to check out my most recent articles and don't be shy to write a comment.</p>
-                      
-                      
-                      <a href= "https://medium.com/@NMashinchi" target="_blank"style = "text-decoration:none"><button type="button" class="button btn d-inline mx-auto center">Articles</button></a>
-
-                        
-                         
-                      
-    
-                    </div>
-                </div>
+            <div class="row" style="max-width:760px;margin:0 auto;">
+              <div class="col-12">
+                <p style="font-size:1.12rem;color:var(--ink);font-weight:500;">I write about the concepts I'm learning and the projects I'm working on. Explaining an idea in writing is the fastest way I know to find out whether I actually understand it.</p>
+                <p>Most of my articles are published in <em>Towards Data Science</em> on Medium, with some on <em>KDnuggets</em>. They range from end-to-end project write-ups to reflections on moving from graduate school into a data science career.</p>
+              </div>
             </div>
-      </div>
-                        
-          
-        
+          </div>
+        </section>
+
+        <section class="section animated fadeIn">
+          <div class="container">
+            <h3 class="section-heading">Writing</h3>
+            <p class="section-sub">A few pieces I'm still happy with.</p>
+
+            <div class="link-grid">
+
+              <a class="link-card" href="https://nmashinchi.medium.com/learn-how-to-use-spark-ml-and-spark-streaming-3a731485d052" target="_blank">
+                <div class="link-card__source">Towards Data Science</div>
+                <h4>How To Use Spark ML and Spark Streaming</h4>
+                <div class="link-card__go">Read on Medium &rarr;</div>
+              </a>
+
+              <a class="link-card" href="https://nmashinchi.medium.com/predicting-number-of-covid19-deaths-using-time-series-analysis-arima-model-4ad92c48b3ae" target="_blank">
+                <div class="link-card__source">Towards Data Science</div>
+                <h4>Forecasting COVID-19 Deaths with an ARIMA Model</h4>
+                <div class="link-card__go">Read on Medium &rarr;</div>
+              </a>
+
+              <a class="link-card" href="https://nmashinchi.medium.com/from-graduate-school-to-becoming-a-data-scientist-513fc15a05bb" target="_blank">
+                <div class="link-card__source">Towards Data Science</div>
+                <h4>From Graduate School to Becoming a Data Scientist</h4>
+                <div class="link-card__go">Read on Medium &rarr;</div>
+              </a>
+
+            </div>
+
+            <div style="text-align:center;margin-top:2.25rem;">
+              <a href="https://medium.com/@NMashinchi" target="_blank"><button type="button" class="button">All articles on Medium</button></a>
+            </div>
+          </div>
+        </section>
 
       </main>
 
-      
-    
+
       <footer>
       <% include ./partials/footer.ejs %>
       </footer>
-      
+
 
       <% include ./partials/baseScripts.ejs %>
       <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>

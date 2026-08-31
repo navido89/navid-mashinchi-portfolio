@@ -5,10 +5,10 @@
 
   @media (min-width: 800px) and (max-width: 850px) {
       .navbar:not(.top-nav-collapse) {
-          background: #c71585!important;
+          background: var(--ink)!important;
       }
   }
-  .view,body,html{height:100%}.navbar{background-color:#c71585}.page-footer,.top-nav-collapse{background-color:#c71585}@media only screen and (max-width:768px){.navbar{background-color:#c71585}}
+  .view,body,html{height:100%}.navbar{background-color:var(--ink)}.page-footer,.top-nav-collapse{background-color:var(--ink)}@media only screen and (max-width:768px){.navbar{background-color:var(--ink)}}
   </style>
   
  <!-- Navbar -->
@@ -85,3 +85,14 @@ aria-expanded="false" aria-label="Toggle navigation">
 </div>
 </nav>
 <!-- Navbar -->
+<script>
+  (function () {
+    var path = (location.pathname || "/").replace(/\/+$/, "") || "/";
+    document.querySelectorAll(".navbar .navbar-nav.mr-auto .nav-link").forEach(function (a) {
+      var href = a.getAttribute("href");
+      if (href && href !== "/" && (path === href || path.indexOf(href + "/") === 0)) {
+        a.classList.add("active");
+      }
+    });
+  })();
+</script>
